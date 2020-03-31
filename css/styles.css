@@ -1,1 +1,186 @@
 @import url(reset.css);
+:root{
+
+    /*Colors*/
+    --bg: #ffffff;
+    --bg-fallback: #303030;
+    --color1: rgb(2, 2, 2);
+    --color2: rgb(236, 89, 3);
+    --light: rgb(231, 231, 231);
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+body{
+    
+    background-color: var(--bg);
+    width: 100%;
+    position: absolute;
+
+}
+.section1{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    background-image: url(ui-image/intro-bg.jpg);
+    background-size: 100%;
+
+
+
+}
+.intro-1{
+  
+    background-color: var(--color1);
+    width: 70%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+ 
+
+
+    animation: first-color 5s ease-out,
+               fade 2s ease-in 5s;
+}
+.intro-2{
+    background: var(--color2);
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    
+    animation: second-color 5s ease-out;
+   
+}
+@keyframes first-color{
+    0.1%{
+        opacity: 1;
+    }
+    20%{
+        height: 50%;
+        width: 70%;  
+
+    }
+    
+    40%{
+        width: 100%;
+        left: 0;
+        
+    }
+    60%{
+        height: 50%;
+        width: 30%;
+        left: 70%;
+        opacity: 1;
+    }
+   
+    80%{
+        left: 70%;
+        height: 100%;
+        
+    }
+
+    90%{
+        left: 0;
+        width: 130%;
+        
+    }
+
+    
+    100%{
+        height: 100%;
+        width: 70%;
+        top: 0;
+        left: 0;
+        
+    }
+}
+@keyframes second-color{
+    0.1%{
+        
+    }
+    15%{
+        height: 60%;
+        width: 30%;
+    }
+
+    30%{
+        height: 60%;
+        width: 100%;
+        right: 0;
+    }
+    45%{
+        right: 70%;
+        width: 50%;
+        height: 60%;
+    }
+    60%{
+        right: 70%;
+        height: 100%;
+    }
+    75%{
+        
+        width: 130%;
+
+        
+    }
+    98%{
+        
+    }
+    100%{
+        right: -10%;
+        height: 100%;
+        width: 40%;
+        
+        
+    }
+}
+
+/*@keyframes fade{
+    100%{
+        opacity: 0;
+    }
+}*/
+.text{
+    display: block;
+    font-size: 12rem;
+    font-weight: 900;
+    color: var(--color2);
+    margin-left: 5rem;
+    margin-top: 8rem;
+    opacity: 0;
+
+    animation: text-appear 1s ease-in 5s forwards;
+
+}
+@keyframes text-appear{
+    to{
+        opacity: 1;
+    }
+}
+
+.question{
+    display: block;
+    font-size: 40rem;
+    font-weight: 900;
+    color: var(--color1);
+    margin-top: 5rem;
+    margin-left: 3rem;
+    opacity: 0;
+    animation: text-appear .5s ease-in 6s forwards;
+
+}
+@keyframes{
+    to{
+        opacity: 1;
+    }
+}
