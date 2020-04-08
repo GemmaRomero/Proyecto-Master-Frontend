@@ -162,6 +162,12 @@ body{
     animation: text-appear 1s ease-in 5s forwards;
 
 }
+.arrow{
+    background-color: var(--color2);
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
 @keyframes text-appear{
     to{
         opacity: 1;
