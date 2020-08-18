@@ -1,0 +1,5 @@
+@import 'styles.css';
+
+.section--landing{
+    background-color: var(--color-main);
+}

@@ -1,0 +1,34 @@
+:root{
+    /* Colors */
+    --color-main:#E30A87;
+    --color-secondary: ;
+    --color-ligth:#ffffff;
+    --color-medium-light:#b1b1b1;
+    --color-medium:#898989;
+    --color-dark:#525252;
+    
+    --gradient-main:linear-gradient(94deg, #e30a87 0%, #a70061);
+
+    /* Fonts */
+    --font-title:'Merriweather', serif;
+    --font-default: 'Ubuntu', sans-serif;
+
+
+    /* Sizes */
+    --text-default: 16px;
+    --text-xxl:78px;
+    --text-xl:63px;
+    --text-l:36px;
+    --text-m:24px;
+    --text-s: 14px;
+
+    /* Others */
+    --padding-btn: 1rem ;
+    --radius-box: 24px;
+    --margin-page: 10%;
+
+};
+html{
+    font-size: 100%;
+}
+
