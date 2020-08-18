@@ -2,7 +2,7 @@
     /* Colors */
     --color-main:#E30A87;
     --color-secondary: ;
-    --color-ligth:#ffffff;
+    --color-light:#ffffff;
     --color-medium-light:#b1b1b1;
     --color-medium:#898989;
     --color-dark:#525252;
@@ -23,7 +23,7 @@
     --text-s: 14px;
 
     /* Others */
-    --padding-btn: 1rem ;
+    --padding-btn: 1rem 2rem;
     --radius-box: 24px;
     --margin-page: 10%;
 

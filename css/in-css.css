@@ -1,0 +1,98 @@
+@import 'styles.css';
+@import 'reset.css';
+.header--landing{
+    position: absolute;
+}
+.section--landing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: var(--color-light);
+    font-family: var(--font-title);
+    font-size: var(--text-l);
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+
+    
+}
+.landing--planning::before{
+    content:" ";
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 90px solid var(--color-light);
+    top: 15%;
+    left: 0;
+
+}
+.landing--planning::after{
+    content:" ";
+    position: absolute;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent;
+    border-right: 180px solid var(--color-light);
+    bottom: 10%;
+    right: 0;
+
+}
+.landing--planning{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient-main);
+    position: relative;
+    padding-top: 10%;
+}
+.main--logo{
+    width: 50%;
+    fill: #ffffff;
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 15%;
+}
+
+.landing--experience{
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1505051508008-923feaf90180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10%;
+}
+.landing--experience::before{
+    content:" ";
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 90px solid var(--color-main);
+    top: 15%;
+    left: 0;
+
+}
+.landing--experience::after{
+    content:" ";
+    position: absolute;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent;
+    border-right: 180px solid var(--color-main);
+    bottom: 10%;
+    right: 0;
+}
+.btn{
+    padding: var(--padding-btn);
+    background-color: transparent;
+    color: var(--color-light);
+    font-size: var(--text-default);
+    font-family: var(--font-default);
+    border: solid 2px var(--color-light);
+    border-radius: var(--text-default);
+    margin-top: 3rem;
+}
