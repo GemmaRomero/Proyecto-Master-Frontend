@@ -1,98 +1,173 @@
 @import 'styles.css';
 @import 'reset.css';
-.header--landing{
-    position: absolute;
+html{
+    font-size: 100%;
+    font-family: var(--font-default);
 }
-.section--landing{
+body{
     width: 100%;
     height: 100vh;
     display: flex;
-    color: var(--color-light);
-    font-family: var(--font-title);
-    font-size: var(--text-l);
-    font-weight: 400;
-    text-align: center;
-    line-height: 60px;
-    position: relative;
+    flex-direction: column;
+}
+/* HEADER */
+.header{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
 
+    background: var(--gradient-main);
+    background-color: var(--color-primary);
+    box-shadow: rgba(0,0, 0, .3) 0px 3px 3px;
     
 }
-.landing--planning::before{
-    content:" ";
-    position: absolute;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 90px solid var(--color-light);
-    top: 15%;
-    left: 0;
-
-}
-.landing--planning::after{
-    content:" ";
-    position: absolute;
-    border-top: 125px solid transparent;
-    border-bottom: 125px solid transparent;
-    border-right: 180px solid var(--color-light);
-    bottom: 10%;
-    right: 0;
-
-}
-.landing--planning{
-    width: 50%;
+.header__nav{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: var(--gradient-main);
-    position: relative;
-    padding-top: 10%;
-}
-.main--logo{
-    width: 50%;
-    fill: #ffffff;
-    margin-bottom: 3rem;
-    position: absolute;
-    top: 15%;
-}
 
-.landing--experience{
-    width: 50%;
-    background-image: url(https://images.unsplash.com/photo-1505051508008-923feaf90180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    background-repeat: no-repeat;
-    background-size: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 10%;
+    margin: 1rem 3rem 0 3rem;
 }
-.landing--experience::before{
-    content:" ";
-    position: absolute;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 90px solid var(--color-main);
-    top: 15%;
-    left: 0;
-
-}
-.landing--experience::after{
-    content:" ";
-    position: absolute;
-    border-top: 125px solid transparent;
-    border-bottom: 125px solid transparent;
-    border-right: 180px solid var(--color-main);
-    bottom: 10%;
-    right: 0;
-}
-.btn{
-    padding: var(--padding-btn);
-    background-color: transparent;
+.header--logo{
     color: var(--color-light);
-    font-size: var(--text-default);
-    font-family: var(--font-default);
-    border: solid 2px var(--color-light);
-    border-radius: var(--text-default);
-    margin-top: 3rem;
+    font-family: var(--font-title);
+    font-size: var(--text-l); 
 }
+.header--login{
+    background-color: var(--color-light);
+    border: none;
+    padding:.5rem 1rem;
+    text-transform: uppercase;
+    color: var(--color-primary-dark);
+}
+.header--login:hover{
+    background-color: var(--color-third);
+    color: var(--color-light);
+    transition: ease .5s;
+}
+/* SLIDE */
+.section--slide{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--color-medium-light);
+    /* background-image: url(https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: bottom; */
+       
+}
+.slide__parts{
+    width: 50%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide--img{
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1502301103665-0b95cc738daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title{
+    color: var(--color-primary-dark);
+    font-size: var(--text-xl);
+    text-align: center;
+    margin: 3rem 3rem 2rem 3rem;
+    line-height: normal;
+}
+.slide--input{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    width: 80%;
+}
+.slide--input > input{
+    height: 2rem;
+    margin-top: .5rem;
+    border: none;
+    padding: 0 1rem;
+    font-style: italic;
+}
+.btn--fill{
+    background-color: var(--color-primary-dark);
+    color: var(--color-light);
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+/* SUGERENCIAS */
+.section__suggestions{
+    
+    width: 100%;
+    
+    
+}
+.suggestions__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--color-dark);
+    font-size: var(--text-l);
+    
+    margin: 2rem 3rem;
+    
+}
+.suggestions--title{
+    
+    
+}
+.suggestions__boxes{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:  3rem;
+    
+}
+.box--content{
+    background-color: wheat;
+    height: 500px;
+
+
+}
+
+/* CIUDADES*/
+.section__cities{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cities__boxes{
+    margin: 3rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.cities__card{
+    overflow: hidden;
+    background-color: firebrick;
+    height: 200px;
+    position: relative;
+
+}
+.cities__card span{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: var(--text-m);
+    color: var(--color-light);
+}
+/* TU RESTAURANTE */
+/* FOOTER */
+/* POP UP LOGIN */
+/* POP UP LOGIN */

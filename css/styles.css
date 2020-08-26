@@ -1,24 +1,31 @@
 :root{
     /* Colors */
-    --color-main:#E30A87;
-    --color-secondary: ;
+    --color-primary:#29C874;
+    --color-primary-light: #6bfca3;
+    --color-primary-dark: #009647;
+    --color-secondary: #5d34af;
+    --color-secondary-light: #9061e2;
+    --color-secondary-dark: #27057f;
+    --color-third: #ffb300;
+    --color-third-light: #ffe54c;
+    --color-third-dark: #c68400;
     --color-light:#ffffff;
-    --color-medium-light:#b1b1b1;
+    --color-medium-light:#e1ebe6;
     --color-medium:#898989;
     --color-dark:#525252;
     
-    --gradient-main:linear-gradient(94deg, #e30a87 0%, #a70061);
+    --gradient-main:linear-gradient(94deg, #29c874 0%, #009647);
 
     /* Fonts */
-    --font-title:'Merriweather', serif;
-    --font-default: 'Ubuntu', sans-serif;
+    --font-title:'Unica One', cursive;
+    --font-default: 'Lato', sans-serif;
 
 
     /* Sizes */
     --text-default: 16px;
     --text-xxl:78px;
     --text-xl:63px;
-    --text-l:36px;
+    --text-l:32px;
     --text-m:24px;
     --text-s: 14px;
 
@@ -27,8 +34,6 @@
     --radius-box: 24px;
     --margin-page: 10%;
 
-};
-html{
-    font-size: 100%;
 }
+
 
