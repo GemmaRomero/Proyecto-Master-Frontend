@@ -122,10 +122,6 @@ body{
     margin: 2rem 3rem;
     
 }
-.suggestions--title{
-    
-    
-}
 .suggestions__boxes{
     display: grid;
     grid-gap: 1rem;
