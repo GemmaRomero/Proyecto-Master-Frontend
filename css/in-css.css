@@ -164,6 +164,110 @@ body{
     color: var(--color-light);
 }
 /* TU RESTAURANTE */
+.section__addRestaurant{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-color: var(--color-dark);
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 3rem;
+
+}
+.filter--dark{
+    background-color: var(--color-third-extradark);
+    opacity: .7;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+.restaurant__group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    margin: 0 3rem;
+}
+.restaurant--title{
+    color: var(--color-light);
+    font-size: var(--text-xl);
+    margin-bottom: 3rem;
+    
+}
+
 /* FOOTER */
+.footer{
+    background: var(--gradient-main);
+    
+    width: 100%;
+}
 /* POP UP LOGIN */
-/* POP UP LOGIN */
+.popUp{
+    position: fixed;
+    background-color: rgba(29, 54, 52, .8);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    
+
+}
+.popUp__content{
+    width: 60%;
+
+    background-color: var(--color-medium-light);
+    display: flex;
+    border: var(--color-light) 1px solid;
+    box-shadow: v;
+}
+.content--info{
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1488992783499-418eb1f62d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2053&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signUp--form{
+    width: 50%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-dark);
+    position: relative;
+}
+.title-popUp{
+    font-size: var(--text-l);
+    color: var(--color-primary-dark);
+    margin-bottom: 2rem;
+}
+.popUp__form--input{
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100%;
+    margin-bottom: 1.5rem;
+    
+}
+.popUp__form--input input{
+    border: none;
+    height: 2rem;
+    margin-top: .5rem;
+}
+.close{
+    position: absolute;
+    color: var(--color-primary-dark);
+    font-size: var(--text-l);
+    top: -1.5rem;
+    right: -1.5rem;
+}

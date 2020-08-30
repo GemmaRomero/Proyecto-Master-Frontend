@@ -1,20 +1,32 @@
 :root{
     /* Colors */
-    --color-primary:#29C874;
+    /* --color-primary:#29C874;
     --color-primary-light: #6bfca3;
     --color-primary-dark: #009647;
     --color-secondary: #5d34af;
     --color-secondary-light: #9061e2;
-    --color-secondary-dark: #27057f;
-    --color-third: #ffb300;
+    --color-secondary-dark: #27057f; */
+    /* --color-third: #ffb300;
     --color-third-light: #ffe54c;
-    --color-third-dark: #c68400;
+    --color-third-dark: #c68400; */
     --color-light:#ffffff;
-    --color-medium-light:#e1ebe6;
+    /* --color-medium-light:#e1ebe6; */
     --color-medium:#898989;
     --color-dark:#525252;
-    
-    --gradient-main:linear-gradient(94deg, #29c874 0%, #009647);
+
+    --color-primary: #7e57c2;
+    --color-primary-light: #b085f5;
+    --color-primary-dark: #4d2c91;
+    --gradient-main:linear-gradient(94deg, #7e57c2 0%, #4d2c91);
+    --color-medium-light:#ede7fa;
+
+    --color-third: #80cbc4;
+    --color-third-light: #b2fef7;
+    --color-third-dark: #4f9a94;
+    --color-medium-light:#e0f2f1;
+    --color-third-extradark: #1d3634;
+
+    /* --gradient-main:linear-gradient(94deg, #29c874 0%, #009647); */
 
     /* Fonts */
     --font-title:'Unica One', cursive;
@@ -35,5 +47,6 @@
     --margin-page: 10%;
 
 }
+
 
 

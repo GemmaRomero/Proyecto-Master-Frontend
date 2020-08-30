@@ -7,6 +7,7 @@
     <title>La carta de tu restaurante</title>
     <link rel="stylesheet" href="css/in-css.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap" rel="stylesheet">
+    <script src="js/functions.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                     <label for="filterName">¿Sabes como se llama?</label>
                 </div>
                 <div class="slide--input">
-                    <input type="search" id="filterPlace">
+                    <input type="search" id="filterPlace" placeholder="Madrid">
                     <label for="filterPlace">¿Dónde está?</label>
                 </div>
                 <div>
@@ -41,7 +42,7 @@
 
         <section class="section__suggestions">
             <div class="suggestions__header">
-                <h2 class="suggestions--title">Restaurantes sugeridos</h2>
+                <h3 class="suggestions--title">Restaurantes sugeridos</h3>
                 <div>
                     <button class="btn--fill">
                         < </button>
@@ -79,10 +80,10 @@
                 </div>
             </div>
         </section>
-
+<!-- 
         <section class="section__cities">
             <div class="suggestions__header">
-                <h3 class="suggestions--title">Ciudades para comer</h3>
+                <h4 class="suggestions--title">Ciudades para comer</h4>
                 <div>
                     <button class="btn--fill">
                         < </button>
@@ -116,11 +117,60 @@
                         <span>San Sebastián</span>
                     </div>
                 </div>
-        </section>
+        </section> -->
+
+        
         <section class="section__addRestaurant">
+            <div class="filter--dark"></div>
+            <div class="restaurant__group">
+            <h2 class="restaurant--title">¿Tienes un restaurante?</h2>
+            <button class="btn--fill" onclick="openPopUp()">Registrálo Aquí</button>
+            </div>
 
         </section>
     </main>
+    <footer class="footer">
+        <div>hfjshdjk</div>
+        <div></div>
+        <div></div>
+    </footer>
+
+    <!-- Pop UP -->
+
+    <div class="popUp" id="popUp">
+        
+        <div class="popUp__content">
+            <div class="content--info">
+                
+                
+            </div>
+            <form class="signUp--form">
+                
+                <span class="title-popUp">Registra tu restaurante</span>
+                <div class="close" onclick="closePopUp()">X</div>
+                <div class="popUp__form--input">
+                <input type="text" id="userName" name="usuario">
+                <label for="userName">Nombre de Usuario</label>
+                </div>
+                <div class="popUp__form--input">
+                    <input type="text" id="resturantName" name="restaurante">
+                    <label for="restaurantName">Nombre del restaurante</label>
+                </div>
+                <div class="popUp__form--input">
+                    <input type="address" id="address" name="direccion">
+                    <label for="address">Dirección del Resturante</label>
+                </div>
+                <div class="popUp__form--input">
+                    <input type="address" id="postCode" name="cp">
+                    <label for="postCode">Código postal</label>
+                </div>
+                <input type="submit" value="Registrar" class="btn--fill">
+            </form>
+
+        </div>
+
+    </div>
+   
 
 </body>
 
