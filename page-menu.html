@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La carta de tu restaurante</title>
     <link rel="stylesheet" href="css/menu-css.css">
+    <script src="js/page-menu.js"></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div class="header--logo">MyMenu</div>
+            <div class="header--logo"><a href="index.html">MyMenu</a> </div>
             <button class="header--login">Iniciar Sesión</button>
         </nav>
     </header>
@@ -38,11 +39,91 @@
                 </div>
                 <div class="data__box">
                     <div class="data__box--info">
-                        <div class="icon--data"></div>
+                        <svg class="icon--data" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px"
+                            viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                            <g>
+                                <g id="home">
+                                    <polygon points="204,471.75 204,318.75 306,318.75 306,471.75 433.5,471.75 433.5,267.75 510,267.75 255,38.25 0,267.75 
+			76.5,267.75 76.5,471.75 		" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
                         <span>Calle de la Piruleta, 33, Madrid 28003</span>
                     </div>
                     <div class="data__box--info">
-                        <div class="icon--data"></div>
+                        <svg class="icon--data" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459px" height="459px"
+                            viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+                            <g>
+                                <g id="call">
+                                    <path
+                                        d="M91.8,198.9c35.7,71.4,96.9,130.05,168.3,168.3L316.2,311.1c7.649-7.649,17.85-10.199,25.5-5.1
+			c28.05,10.2,58.649,15.3,91.8,15.3c15.3,0,25.5,10.2,25.5,25.5v86.7c0,15.3-10.2,25.5-25.5,25.5C193.8,459,0,265.2,0,25.5
+			C0,10.2,10.2,0,25.5,0h89.25c15.3,0,25.5,10.2,25.5,25.5c0,30.6,5.1,61.2,15.3,91.8c2.55,7.65,0,17.85-5.1,25.5L91.8,198.9z" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
                         <span>91 548 94 435</span>
                         <button class="btn--fill">Llamar</button>
                     </div>
@@ -50,39 +131,442 @@
         </section>
 
         <section class="section__menu">
-            <div class="section__menu--container"></div>
-            <h2>Nuestra carta</h2>
-            <div>
-                <h3>Sugerencias del Chef</h3>
-                <div>
-                <div>aj</div>
-                <div>a</div>
-                <div>a</div>
-                <div>a</div>
-                <div>a</div>
+            <div class="section__menu--container">
+                <div class="menu__suggestions">
+                    <h3 class="menu--title">Sugerencias del Chef</h3>
+                    <div class="menu__suggestions--group">
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img"></div>
+                            <span class="suggestions--item-name"> Ensalada fría</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img"></div>
+                            <span class="suggestions--item-name"> Ensalada fría</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img"></div>
+                            <span class="suggestions--item-name"> Ensalada fría</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img"></div>
+                            <span class="suggestions--item-name"> Ensalada fría</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img"></div>
+                            <span class="suggestions--item-name"> Ensalada fría</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Entrantes</h3>
-                <div class="icon-data"></div>
-            </div>
+                <h2 class="menu--title">Nuestra carta</h2>
+                <div class="menu--sections-group">
+                    <div class="menu--sections">
+                        <h3>Entrantes</h3>
+                        <svg class="icon--data-s" version="1.1" id="downMenu" onclick="verMenu()"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" width="306px" height="306px" viewBox="0 0 306 306"
+                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                            <g>
+                                <g id="keyboard-arrow-down">
+                                    <polygon
+                                        points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+                        <svg class="icon--data-fix" version="1.1" id="closeMenu" onclick="cerrarMenu()"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" width="357px" height="357px" viewBox="0 0 357 357"
+                            style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                            <g>
+                                <g id="close">
+                                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5 		" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
 
 
-            <!-- <div>
-                <div>
-                    <img src="" alt="">
+                    </div>
+                    <div class="menu__container" id="starters">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="https://www.hogarmania.com/archivos/201801/croquetas-jamon-detalle-1280x720x80xX.jpg"
+                                        alt="" height="80px">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Croquetas</span>
+                                    <p>Jamón, boletus, queso, chorizo</p>
+                                </div>
+                                <div class="menu__item--price">8 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/02-Egg.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/06-PeelFruits.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/07-Crustaceans.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/08-Mollusks.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/10-Sulphites.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/11-Mustard.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/12-Peanuts.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/13-Celery.svg" alt="" class="alergic--box">
+                                    <img src="img/icon-alergic/14-Lupins.svg" alt="" class="alergic--box">
+
+
+
+
+
+                        </ul>
+                    </div>
+
+                    </li>
+
+                    </ul>
                 </div>
-                <div>
-                    <p>Nombre del plato</p>
-                    <p>Breve descripción</p>
+                <div class="menu--sections">
+                    <h3>Carnes</h3>
+                    <svg class="icon--data-s" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
+                        viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g>
+                            <g id="keyboard-arrow-down">
+                                <polygon
+                                    points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
                 </div>
-                <div>
-                    alrgernos
+                <div class="menu--sections">
+                    <h3>Pescados</h3>
+                    <svg class="icon--data-s" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
+                        viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g>
+                            <g id="keyboard-arrow-down">
+                                <polygon
+                                    points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="menu--sections">
+                    <h3>Postres</h3>
+                    <svg class="icon--data-s" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
+                        viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g>
+                            <g id="keyboard-arrow-down">
+                                <polygon
+                                    points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="menu--sections">
+                    <h3>Bebidas</h3>
+                    <svg class="icon--data-s" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
+                        viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g>
+                            <g id="keyboard-arrow-down">
+                                <polygon
+                                    points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
                 </div>
             </div>
-            </div> -->
+            </div>
         </section>
     </main>
+    <div class="alergic-info" id="btnAlergic" onclick="openAlergics()">
+        Consultar información alérgenos
+    </div>
+    <div class="popUp--alergic" id="popUpAlergic">
+        <svg version="1.1" class="close--alergic"  onclick="closeAlergics()" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="357px" height="357px"
+            viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+            <g>
+                <g id="close">
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5 		" />
+                </g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+        </svg>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/01-Gluten.svg" alt="">
+            <span>Gluten</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/02-Egg.svg" alt="">
+            <span>Huevos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/03-Fish.svg" alt="">
+            <span>Pescado</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/04-DairyProducts.svg" alt="">
+            <span>Lacteos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/05-Soy.svg" alt="">
+            <span>Soja</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/06-PeelFruits.svg" alt="">
+            <span>Frutos con cáscara</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/07-Crustaceans.svg" alt="">
+            <span>Crustáceos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/08-Mollusks.svg" alt="">
+            <span>Moluscos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/09-SesameGrains.svg" alt="">
+            <span>Sésamo</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/10-Sulphites.svg" alt="">
+            <span>Sulfitos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/11-Mustard.svg" alt="">
+            <span>Mostaza</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/12-Peanuts.svg" alt="">
+            <span>Cacahuetes</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/13-Celery.svg" alt="">
+            <span>Apio</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="img/icon-alergic/14-Lupins.svg" alt="">
+            <span>Altramuces</span>
+        </div>
+
+
+        
+
+
+    </div>
 
 </body>
 
