@@ -30,9 +30,7 @@ body{
     margin: 1rem 3rem 0 3rem;
 }
 .header--logo{
-    color: var(--color-light);
-    font-family: var(--font-title);
-    font-size: var(--text-l); 
+   
     
     
 }
@@ -214,6 +212,41 @@ body{
     
     width: 100%;
 }
+.footer--container{
+    margin: 3rem;
+    color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+}
+
+.footer--container div p {
+    margin-bottom: 1rem;
+}
+.footer--container div p a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+.footer--container div p a:hover{
+    color: var(--color-third);
+}
+.footer--title{
+    text-transform: uppercase;
+}
+.download-app{
+    display: flex;
+    flex-direction: column;
+}
+.download-app a img{
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
 /* POP UP LOGIN */
 .popUp{
     position: fixed;
