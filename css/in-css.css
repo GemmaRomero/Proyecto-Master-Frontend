@@ -29,11 +29,7 @@ body{
 
     margin: 1rem 3rem 0 3rem;
 }
-.header--logo{
-   
-    
-    
-}
+
 .header--logo a{
     text-decoration: none;
     color: var(--color-light);
