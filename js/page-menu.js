@@ -21,7 +21,7 @@ function cerrarMenu(){
 }
 function openAlergics(){
     var popUpAlergics = document.getElementById('popUpAlergic');
-    popUpAlergics.style.top = '15%';
+    popUpAlergics.style.top = '0';
 
     var btnAlergics = document.getElementById('btnAlergic');
     btnAlergics.style.visibility = 'hidden';
@@ -30,8 +30,8 @@ function openAlergics(){
 }
 function closeAlergics(){
     var popUpAlergics = document.getElementById('popUpAlergic');
-    popUpAlergics.style.top = '-200%';
-    
+    popUpAlergics.style.top = '-1000px';
+
     var btnAlergics = document.getElementById('btnAlergic');
     btnAlergics.style.visibility = 'visible';
 }

@@ -11,16 +11,23 @@
 </head>
 
 <body>
-    <header class="header" >
+    <header class="header" id="go-header" >
+        <div class="header-bg">
+        <img  src="./img/header-bg.svg" alt="" height="130"></div>
         <nav class="header__nav">
+
             <div class="header--logo">
                 <img src="img/logo-mymenu.svg" alt="" width="100">
             </div>
-            <button class="header--login">Iniciar Sesión</button>
+            <div class="header--icon--group">
+                <a class="header--icon"><img src="./img/searching-magnifying-glass.svg" width="32"alt=""></a>
+                <a class="header--icon"><img src="./img/user-shape.svg" width="32"alt=""></a>
+                </div>
+            
         </nav>
     </header>
     <main>
-        <section class="section--slide" id="go-header">
+        <section class="section--slide" >
             <div class="slide__parts slide--img">
                 
             </div>
@@ -123,9 +130,8 @@
                 </div>
         </section> -->
 
-        
+        <div class="filter--dark"></div>
         <section class="section__addRestaurant">
-            <div class="filter--dark"></div>
             <div class="restaurant__group">
             <h2 class="restaurant--title" >¿Tienes un restaurante?</h2>
             <button class="btn--fill" onclick="openPopUp()">Registrálo Aquí</button>
@@ -137,18 +143,18 @@
     <footer class="footer">
         <div class="footer--container">
             <div>
-                <p class="header--logo">
-                    <a href="#go-header">Mymenu</a></p>
+                <p>
+                    <a href="#go-header"><img src="./img/logo-mymenu.svg" width="100"alt=""></a></p>
                 <p> <a href="">Sobre nosotros</a> </p>
             </div>
             <div>
                 <p class="footer--title">Ayuda</p>
-                <p><a href="">Preguntas Frecuentes</a></p>
+                <p><a href="">Preguntas <br> Frecuentes</a></p>
                 <p><a href="">Contacto</a></p>
             </div>
             <div>
                 <p class="footer--title">Términos Legales</p>
-                <p><a href="">Términos y Condiciones</a></p>
+                <p><a href="">Términos <br> y Condiciones</a></p>
                 <p><a href="">Política de Privacidad</a></p>
                 <p><a href="">Política de Cookies</a></p>
             </div>
