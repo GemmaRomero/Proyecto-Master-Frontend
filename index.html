@@ -11,15 +11,18 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" >
         <nav class="header__nav">
-            <div class="header--logo">MyMenu</div>
+            <div class="header--logo">
+                <img src="img/logo-mymenu.svg" alt="" width="100">
+            </div>
             <button class="header--login">Iniciar Sesión</button>
         </nav>
     </header>
     <main>
-        <section class="section--slide">
+        <section class="section--slide" id="go-header">
             <div class="slide__parts slide--img">
+                
             </div>
             <form action="GET" class="slide__parts">
                 <h1 class="title">
@@ -125,15 +128,41 @@
             <div class="filter--dark"></div>
             <div class="restaurant__group">
             <h2 class="restaurant--title" >¿Tienes un restaurante?</h2>
-            <button class="btn--fill" onclick="closePopUp()">Registrálo Aquí</button>
+            <button class="btn--fill" onclick="openPopUp()">Registrálo Aquí</button>
             </div>
 
         </section>
     </main>
+<!-- FOOTER -->
     <footer class="footer">
-        <div>hfjshdjk</div>
-        <div></div>
-        <div></div>
+        <div class="footer--container">
+            <div>
+                <p class="header--logo">
+                    <a href="#go-header">Mymenu</a></p>
+                <p> <a href="">Sobre nosotros</a> </p>
+            </div>
+            <div>
+                <p class="footer--title">Ayuda</p>
+                <p><a href="">Preguntas Frecuentes</a></p>
+                <p><a href="">Contacto</a></p>
+            </div>
+            <div>
+                <p class="footer--title">Términos Legales</p>
+                <p><a href="">Términos y Condiciones</a></p>
+                <p><a href="">Política de Privacidad</a></p>
+                <p><a href="">Política de Cookies</a></p>
+            </div>
+            <div>
+                <p class="footer--title">Síguenos</p>
+                <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="https://twitter.com" target="_blank"> Twitter</a></p>
+                <p><a href="https://www.instagram.com/" target="_blank"> Instagram</a></p>
+            </div>
+            <div class="download-app">
+                <a href="https://play.google.com/" target="_blank"><img src="img/google-play.svg" alt="" ></a>
+                <a href="https://www.apple.com/" target="_blank"><img src="img/apple-store.svg" alt=""></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Pop UP -->
@@ -171,6 +200,7 @@
         </div>
 
     </div>
+    
    
 
 </body>
