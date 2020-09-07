@@ -1,0 +1,110 @@
+@import 'styles.css';
+@import 'reset.css';
+body{
+   
+   
+}
+.container-intro{
+    font-size: 300px;
+    position: absolute;
+    background:var(--gradient-main);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-title);
+    color: var(--color-light);
+    z-index: -3;
+    animation: outContainer 1s 3s forwards;
+    top: 0;
+}
+@keyframes outContainer{
+ 
+    100%{
+        top: -100%;
+        transition: ease-in 1s;
+    }
+}
+
+.my{
+   position: absolute;
+
+   transform: translate(-100%, -50%);
+   top: 50vh;
+   left: 0;
+   animation: introMy 1s .5s forwards;
+    
+}
+@keyframes introMy{
+    0%{
+        transform: translate(-50%, -50%);
+   top: 50vh;
+   left: -50%;
+    }
+    100%{
+        left: 42%
+    }
+}
+
+.menu{
+position: absolute;
+
+   transform: translate(100%, -50%);
+   top: 50vh;
+   right: 0;
+   animation: introMenu 1s .5s forwards;
+}
+@keyframes introMenu{
+    0%{
+    transform: translate(-50%, -50%);
+   top: 50vh;
+   right: -100%;
+    }
+    100%{
+        right: 58%;
+    }
+}
+.rectangle{
+    width: 100%;
+    background:var(--gradient-main);
+    height: 300px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.circle{
+    position: absolute;
+    border: 15px rgba(256, 256, 256, 0) solid;
+    width: 800px;
+    height: 800px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 30%;
+    z-index: -2;
+    transform: scale(2, 2);
+    transform-origin: center;
+
+
+    animation: introCircle 1s 1.5s forwards;
+}
+@keyframes introCircle{
+    0%{
+        transform: scale(2, 2);
+        transform-origin: center;
+        border: 15px rgba(256, 256, 256, 1) solid;
+        transition: ease-in .3s;
+    }
+    
+    /* 50%{
+        transform: scale(2, 2);
+        transform-origin: center;
+    } */
+    100%{
+        transform: scale(1, 1);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border: 15px rgba(256, 256, 256, 1) solid;
+        transition: ease-in .3s;
+    }
+}

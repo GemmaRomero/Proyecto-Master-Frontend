@@ -1,5 +1,6 @@
 @import 'styles.css';
 @import 'reset.css';
+@import 'user-css.css';
 html{
     font-size: 100%;
     font-family: var(--font-default);
@@ -150,9 +151,9 @@ body{
     
 }
 .suggestions__boxes{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    grid-gap: 2rem;
+    
     margin:  3rem 5rem;
     
 }
@@ -200,6 +201,7 @@ body{
     margin-bottom: 3rem;
     background-color: rgba(29, 54, 52, .8);
     
+    
 
 }
 
@@ -212,6 +214,7 @@ body{
     position: absolute;
     width: 100%;
     height: 300px;
+    z-index: -1;
     
 }
 .restaurant__group{
@@ -373,4 +376,153 @@ body{
 }
 .map iframe{
     width: 100%;
+}
+/* INTRO */
+.container-intro{
+    font-size: 300px;
+    position: absolute;
+    background:var(--gradient-main);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-title);
+    color: var(--color-light);
+    z-index: 20;
+    animation: outContainer 1s 3s forwards;
+    top: 0;
+}
+@keyframes outContainer{
+ 
+    100%{
+        top: -120%;
+        transition: ease-in 1s;
+    }
+}
+
+.my{
+   position: absolute;
+
+   transform: translate(-100%, -50%);
+   top: 50vh;
+   left: 0;
+   animation: introMy 1s .5s forwards;
+   z-index: 25;
+    
+}
+@keyframes introMy{
+    0%{
+        transform: translate(-50%, -50%);
+   top: 50vh;
+   left: -50%;
+    }
+    100%{
+        left: 42%
+    }
+}
+
+.menu{
+position: absolute;
+
+   transform: translate(100%, -50%);
+   top: 50vh;
+   right: 0;
+   animation: introMenu 1s .5s forwards;
+   z-index: 25;
+}
+@keyframes introMenu{
+    0%{
+    transform: translate(-50%, -50%);
+   top: 50vh;
+   right: -100%;
+    }
+    100%{
+        right: 58%;
+    }
+}
+.rectangle{
+    width: 100%;
+    background:var(--gradient-main);
+    height: 300px;
+    z-index: 22;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+.circle{
+    position: absolute;
+    border: 15px rgba(256, 256, 256, 0) solid;
+    width: 800px;
+    height: 800px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 30%;
+    z-index: 21;
+    transform: scale(2, 2);
+    transform-origin: center;
+
+
+    animation: introCircle 1s 1.5s forwards;
+}
+@keyframes introCircle{
+    0%{
+        transform: scale(2, 2);
+        transform-origin: center;
+        border: 15px rgba(256, 256, 256, 1) solid;
+        transition: ease-in .3s;
+    }
+    
+    /* 50%{
+        transform: scale(2, 2);
+        transform-origin: center;
+    } */
+    100%{
+        transform: scale(1, 1);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border: 15px rgba(256, 256, 256, 1) solid;
+        transition: ease-in .3s;
+    }
+}
+
+/* LOG IN BOX */
+.login__box{
+    width: 300px;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    height: fit fit-content;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+
+}
+.login__box--container{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login--text{
+    font-size: var(--text-m);
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.login--user{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   
+}
+.login--user input{
+    padding:  1rem;
+    border: none;
+    border-radius: 24px;
+    margin: .5rem 0 1rem 0;
+}
+.login--user label{
+    color: var(--color-dark);
 }
