@@ -35,7 +35,7 @@
             </div>
             <div class="header--icon--group">
                 <a class="header--icon"><img src="./img/searching-magnifying-glass.svg" width="32"alt=""></a>
-                <a class="header--icon"><img src="./img/user-shape.svg" width="32"alt=""></a>
+                <a class="header--icon" id="loginUserBtn"><img src="./img/user-shape.svg" width="32"alt=""></a>
                 </div>
             
         </nav>
@@ -1079,7 +1079,48 @@
             <form class="signUp--form">
                 
                 <span class="title-popUp">Registra tu restaurante</span>
-                <div class="close" onclick="closePopUp()">X</div>
+                <div class="close" onclick="closePopUp()">
+                    <svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+<g>
+	<g id="close">
+		<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5 		"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+                </div>
                 <div class="popUp__form--input">
                 <input type="text" id="userName" name="usuario">
                 <label for="userName">Nombre de Usuario</label>
@@ -1104,26 +1145,35 @@
     </div>
 
     <!--LOG IN BOX-->
-    <div class="login__box">
+    <div class="login__box" id="loginUserBox" >
         <div class="login__box--container">
             <span class="login--text">Iniciar sesión</span>    
             <form action="">
                 <div class="login--user">
-                    <input type="text" id="userEmail" placeholder="ejemplo@email.com">
+                    <input type="text" id="userEmail" placeholder="ejemplo@email.com" class="user--input">
                     <label for="userEmail">Usuario</label>
                 </div>
                 <div class="login--user">
-                    <input type="password" id="userPassword">
+                    <input type="password" id="userPassword" class="user--input">
                     <label for="userPassword">Contraseña</label>
                 </div>
-                <input type="submit" value="ENTRAR" class="btn--fill">
+                <input type="submit" value="ENTRAR" class="btn--fill ">
 
             </form>
-            <span>Registrarme</span>
+            <span class="user--register-text">Registrarme</span>
         </div>
     </div>
     
-   
+     <!--searching BOX-->
+     <div class="searching__box" id="loginUserBox" >
+        
+            <form action="" class="searching__box--container">
+                <input type="text" class="searching--input">
+                <input type="submit" value="BUSCAR" class="btn--search">
+            </form>
+       
+    
+     </div>
 
 </body>
 

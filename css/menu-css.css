@@ -185,6 +185,11 @@
     font-size: var(--text-m);
     position: relative;
 }
+.menu--sections:first-child{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
 .menu__container{
     padding: 1rem 2rem;
     background-color: rgba(247, 247, 247, 0.986);
@@ -236,6 +241,39 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: .5rem;
 }
+.section__range-stars{
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}   
+
+.range-stars--text{
+    margin-bottom: 2rem;
+    color: var(--color-primary-dark);
+    font-size: var(--text-l);
+    
+}
+.range-stars__group svg{
+    width: 36px;
+    height: 36px;
+    fill: var(--color-medium);
+    margin-right: 1rem;
+}
+.range-stars__group svg:last-child{
+    margin-right:0;
+}
+.range-stars__group svg:hover{
+    fill: var(--color-secondary);
+    cursor: pointer;
+}
+
+/* PopUp Alergenos*/
+
 .alergic-info{
     background-color: var(--color-secondary);
     position: fixed;
@@ -270,6 +308,8 @@
     box-shadow: rgba(0, 0, 0, .3) 3px 3px 5px;
     transform: translate(-50%, 0);
     transition: ease-in-out 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
    
    
@@ -279,6 +319,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .popUp--alergic--item img{
     width: 96px;
@@ -286,13 +327,30 @@
 }
 .close--alergic{
     position: absolute;
-    fill: var(--color-dark);
-    width: 1.5rem;
-    top: -9rem;
+    top: 1rem;
     right: 1.5rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 100%;
+    height: 1rem;
+    width: 1rem;
+   padding: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close--alergic:hover{
+cursor: pointer;
+}
+.close--alergic svg{
+    
+    fill: var(--color-dark);
+    width: 1rem;
+   
+    
 }
 
-
+/* Media Queries*/
 
 @media (max-width: 1000px){
 .menu__item--alergic{
@@ -317,6 +375,7 @@
     left: 0;
     height: fit-content;
     text-align: center;
+    
 }
 .popUp--alergic--item img{
     width: 36px;

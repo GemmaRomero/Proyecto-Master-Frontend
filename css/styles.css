@@ -46,6 +46,8 @@
     --radius-box: 24px;
     --margin-page: 10%;
 
+    --box-shadow-default: rgba(0, 0, 0, .3) 3px 3px 5px;
+
 }
 
 

@@ -10,3 +10,12 @@ function openPopUp(){
     PopUp.style.visibility = 'visible';
     console.log('funciona');
 }
+
+
+
+
+
+
+
+
+

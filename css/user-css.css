@@ -108,7 +108,7 @@
 }
 
 .tooltip{
-    background: var(--color-secondary);
+    background: var(--color-secondary-light);
     color: var(--color-dark);
     padding: 1rem;
     border-radius: 16px;
@@ -131,7 +131,7 @@
   margin-left: -15px;
   border-width: 15px;
   border-style: solid;
-  border-color:  transparent  transparent transparent var(--color-secondary);
+  border-color:  transparent  transparent transparent var(--color-secondary-light);
 }
 
 .favorites--item{
