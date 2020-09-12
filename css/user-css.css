@@ -1,83 +1,88 @@
 @import 'in-css.css';
-
-.section__welcome-user{
+.section__welcome-user {
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 9rem 0 2rem 0;
 }
-.welcome-user--container{
+
+.welcome-user--container {
     margin: 0 5rem;
 }
-.welcome-user--form{
+
+.welcome-user--form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.welcome-user--title{
+
+.welcome-user--title {
     font-size: var(--text-xl);
     color: var(--color-primary-dark);
     margin-bottom: 2rem;
     text-align: center;
 }
-.welcome-user--city{
+
+.welcome-user--city {
     border: none;
     font-size: var(--text-xl);
-   align-self: center;
+    align-self: center;
     color: var(--color-secondary);
     font-weight: bolder;
     margin-bottom: 2rem;
 }
-.welcome-user--search{
+
+.welcome-user--search {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.welcome-user--input{
+.welcome-user--input {
     padding: 1rem 2rem;
     border-radius: 40px;
     border: solid 2px var(--color-primary);
     margin-right: 1rem;
     min-width: 300px;
-    
 }
-.section__favorites{
+
+.section__favorites {
     width: 100%;
     /* background-color: turquoise; */
     margin: 2rem 0;
-
 }
-.favorites--container{
+
+.favorites--container {
     margin: 3rem 5rem;
 }
-.favorites--title{
+
+.favorites--title {
     margin-bottom: 2rem;
     color: var(--color-primary-dark);
     font-size: var(--text-l);
 }
-.favorites--group{
+
+.favorites--group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
     grid-gap: 2rem;
     margin: 4rem 0;
 }
-.favorites--box{
+
+.favorites--box {
     position: relative;
     width: 23.3%;
     min-width: 300px;
     grid-gap: 2rem;
-    margin-bottom: 2REM;
-    
+    margin-bottom: 2rem;
 }
-.icon-heart{
+
+.icon-heart {
     position: absolute;
     background-color: var(--color-light);
     border: 3px solid var(--color-primary);
@@ -90,24 +95,24 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, .3) 3px 3px 5px;
     z-index: 1;
-    
 }
 
-.icon-heart svg{
+.icon-heart svg {
     width: 32px;
     height: 32px;
     fill: var(--color-primary);
 }
-.icon-heart:hover .tooltip{
+
+.icon-heart:hover .tooltip {
     visibility: visible;
     transition: ease-in-out 1s;
-} 
-.icon-heart:hover svg{
-    fill: var(--color-medium)
-    
 }
 
-.tooltip{
+.icon-heart:hover svg {
+    fill: var(--color-medium)
+}
+
+.tooltip {
     background: var(--color-secondary-light);
     color: var(--color-dark);
     padding: 1rem;
@@ -118,46 +123,40 @@
     line-height: normal;
     left: -10rem;
     visibility: hidden;
-  
-
 }
 
-.tooltip::after{
+.tooltip::after {
     content: "";
-  position: absolute;
-  top: -.4rem;
-  right: .1rem;
-  transform: translate(100%, 100%);
-  margin-left: -15px;
-  border-width: 15px;
-  border-style: solid;
-  border-color:  transparent  transparent transparent var(--color-secondary-light);
+    position: absolute;
+    top: -.4rem;
+    right: .1rem;
+    transform: translate(100%, 100%);
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color-secondary-light);
 }
 
-.favorites--item{
+.favorites--item {
     position: relative;
-    
     background-color: var(--color-medium-light);
     border-radius: 20px;
     overflow: hidden;
-
     height: fit-content;
     box-shadow: rgba(0, 0, 0, .3) 3px 3px 5px
 }
 
-
-
-.favorites--item-img{
+.favorites--item-img {
     height: 200px;
     background-color: thistle;
     overflow: hidden;
-    
 }
-.favorites--item-img img{
+
+.favorites--item-img img {
     width: 100%;
-    
 }
-.favorites--item-logo{
+
+.favorites--item-logo {
     width: 35%;
     border-radius: 100%;
     overflow: hidden;
@@ -169,47 +168,53 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.favorites--item-logo img{
+
+.favorites--item-logo img {
     width: 100%;
 }
-.favorites--item-content{
+
+.favorites--item-content {
     margin-top: 5rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.favorites--item-name{
+
+.favorites--item-name {
     color: var(--color-primary-dark);
     font-size: var(--text-l);
     margin: 1rem 0;
 }
-.favorites--item-description{
+
+.favorites--item-description {
     color: var(--color-dark);
     margin-bottom: 1rem;
 }
-.favorites--item-stars{
+
+.favorites--item-stars {
     margin-bottom: 1rem;
 }
-.favorites--item-stars svg{
+
+.favorites--item-stars svg {
     width: 24px;
     height: 24px;
     fill: var(--color-primary-dark);
 }
-.favorites--item-date{
+
+.favorites--item-date {
     text-align: center;
     color: var(--color-dark);
     margin-bottom: 1rem;
     line-height: normal;
+}
 
+.favorites--item:hover .favorites--item-img img {
+    width: 120%;
+    transition: ease-in-out .5s;
 }
-.favorites--item:hover .favorites--item-img img{
- width: 120%;
- 
- transition: ease-in-out .5s;
- 
-}
-.favorites--item:hover{
-background-color: var( --color-secondary-light);
-transition: ease-out .3s;
+
+.favorites--item:hover {
+    background-color: var( --color-secondary-light);
+    transition: ease-out .3s;
 }

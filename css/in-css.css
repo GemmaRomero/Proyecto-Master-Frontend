@@ -1,6 +1,5 @@
 @import 'styles.css';
 @import 'reset.css';
-@import 'user-css.css';
 html {
     font-size: 100%;
     font-family: var(--font-default);
@@ -119,11 +118,11 @@ body {
 }
 
 .slide--input>input {
-    height: 2rem;
     margin-top: .5rem;
     border: none;
-    padding: 0 1rem;
+    padding: 1rem 2rem;
     font-style: italic;
+    border-radius: 24px;
 }
 
 .btn--fill {
@@ -136,10 +135,37 @@ body {
     width: fit-content;
 }
 
+.buttons-arrows {
+    display: flex;
+}
+
 .btn--fill:hover {
     font-weight: bolder;
     background-color: var(--color-secondary);
     transition: ease .5s;
+}
+
+.icon-arrow {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.icon-arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-light);
+}
+
+.buttons-arrows:last-child {
+    margin-right: 0;
 }
 
 
@@ -147,6 +173,10 @@ body {
 
 .section__suggestions {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .suggestions__header {
@@ -156,17 +186,108 @@ body {
     color: var(--color-dark);
     font-size: var(--text-l);
     margin: 2rem 5rem;
+    width: 90%;
+}
+
+.suggestions__boxes-slider {
+    display: flex;
+    grid-gap: 2rem;
 }
 
 .suggestions__boxes {
     display: flex;
-    grid-gap: 2rem;
-    margin: 3rem 5rem;
+    margin: 3rem 0;
+    overflow: hidden;
+    width: 90%;
 }
 
-.box--content {
-    background-color: wheat;
-    height: 500px;
+.suggestion--box {
+    position: relative;
+    width: 400px;
+    min-width: 300px;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.suggestion--item {
+    position: relative;
+    background-color: var(--color-medium-light);
+    border-radius: 20px;
+    overflow: hidden;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, .3) 3px 3px 5px
+}
+
+.suggestion--item-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.suggestion--item-img img {
+    width: 100%;
+}
+
+.suggestion--item-logo {
+    width: 35%;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 100%;
+    border: 3px solid var(--color-primary);
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.suggestion--item-logo img {
+    width: 100%;
+}
+
+.suggestion--item-content {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestion--item-name {
+    color: var(--color-primary-dark);
+    font-size: var(--text-l);
+    margin: 1rem 0;
+}
+
+.suggestion--item-description {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.suggestion--item-stars {
+    margin-bottom: 1rem;
+}
+
+.suggestion--item-stars svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-dark);
+}
+
+.suggestion--item-date {
+    text-align: center;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    line-height: normal;
+}
+
+.suggestion--item:hover .suggestion--item-img img {
+    width: 120%;
+    transition: ease-in-out .5s;
+}
+
+.suggestion--item:hover {
+    background-color: var( --color-secondary-light);
+    transition: ease-out .3s;
 }
 
 
@@ -309,7 +430,6 @@ body {
     background-color: var(--color-medium-light);
     display: flex;
     border: var(--color-light) 1px solid;
-    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -349,6 +469,8 @@ body {
     border: none;
     height: 2rem;
     margin-top: .5rem;
+    border-radius: 24px;
+    padding: 0 1rem;
 }
 
 .close {
@@ -381,11 +503,31 @@ body {
     }
     .section--slide {
         flex-direction: column;
-        padding-bottom: 630px;
+        padding-bottom: 680px;
         background-color: var(--color-medium-light);
     }
     .slide__parts {
         width: 100%;
+    }
+    .popUp__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--color-light) 1px solid;
+        overflow: visible;
+    }
+    .content--info {
+        display: none;
+    }
+    .signUp--form {
+        width: 100%;
+    }
+    .popUp__form--input {
+        width: 90%;
+    }
+    .close {
+        top: -2rem;
+        right: -2rem;
     }
 }
 
@@ -599,6 +741,7 @@ body {
     top: 1.2rem;
     right: 10rem;
     border-radius: 20px;
+    display: none;
 }
 
 .searching__box--container {
