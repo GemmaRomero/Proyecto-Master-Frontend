@@ -1,17 +1,451 @@
 @import 'in-css.css';
 @import 'menu-css.css';
-
-.modal__page--img{
-    background-color: rgba(0, 0, 0,.5);
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    
-
+body {
+    color: var(--color-dark);
 }
-.page--img:hover .modal__page--img{
-    opacity: 1;
+
+.section__restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color-medium-light); */
+}
+
+.section__restaurant--container {
+    width: 80%;
+    margin: 7rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.section__restaurant--title {
+    font-size: var(--text-xl);
+    color: var(--color-primary-dark);
+    text-align: center;
+}
+
+.restaurant__form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.restaurant__data--box,
+.restaurant__suggestions--box,
+.restaurant__menu--box {
+    padding: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--color-primary-light); */
+    /* border-top: 2px solid var(--color-secondary); */
+    /* border-bottom: 1px solid var(--color-primary); */
+    /* border-radius: 8px; */
+}
+
+.restaurant__data--title {
+    font-size: var(--text-l);
+    color: var(--color-primary-dark);
+    margin-bottom: 2rem;
+}
+
+.data__group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.data__text-group,
+.data__file-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    min-width: 300px;
+}
+
+.data__address-group {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.data__street {
+    flex-grow: 2;
+}
+
+.data__text--title,
+.data__text--description,
+.data__file--logo,
+.data__file--frontpage,
+.data__street,
+.data__street-number,
+.data__post-code,
+.data__city,
+.data__phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=number],
+textarea {
+    padding: .5rem 1rem;
+    /* border-radius: 4px; */
+    /* border: 1px solid var(--color-primary); */
+    border: none;
+    border-bottom: 1px solid var(--color-secondary);
+    border-left: 1px solid var(--color-secondary);
+    border-bottom-left-radius: 8px;
+    /* box-shadow: var(--box-shadow-default); */
+    color: var(--color-medium);
+    background-color: transparent;
+}
+
+.label {
+    margin-bottom: .5rem;
+}
+
+.data__file--logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo--input {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo--input input {
+    margin-left: 4rem;
+}
+
+.logo--input input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-upload {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-primary);
+    padding: .5rem 1rem;
+    font-size: var(--text-s);
+    border-radius: 8px;
+    color: var(--color-primary-dark);
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.btn-upload:hover {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+}
+
+.restaurant__suggestions-group,
+.restaurant__menu-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.restaurant__suggestions--title,
+.restaurant__menu--title {
+    font-size: var(--text-l);
+    color: var(--color-primary-dark);
+}
+
+.restaurant__suggestions--add,
+.restaurant__menu--add-section,
+.menu-section--item-add {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+}
+
+.restaurant__suggestions--add svg,
+.restaurant__menu--add-section svg,
+.menu-section--item-add svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-light);
+}
+
+.restaurant__suggestions--item {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem 0 2rem;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-medium);
+    flex-wrap: wrap;
+}
+
+.suggestions__file,
+.suggestion__file--name {
+    width: 48%;
+    min-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.suggestions__file--img,
+.suggestion__file--name {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
+
+.border-top {
+    border-top: 1px solid var(--color-medium);
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.restaurant__menu-section-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant__menu-section {
+    border-bottom: 1px solid var(--color-medium);
+    border-top: 1px solid var(--color-medium);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restaurant__menu-section--item {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.menu-section--item {
+    padding: 1rem 2rem;
+    font-size: var(--text-m);
+    background-color: var(--color-medium-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__add-dish {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid var(--color-medium);
+}
+
+.menu__add-dish-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    min-width: 300px;
+}
+
+.menu__add-dish--name,
+.menu__add-dish--description,
+.menu__add-dish--file-group,
+.menu__add-dish--money,
+.menu__add-dish--price,
+.menu__add-dish-alergic-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.menu__add-dish--file-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__add-dish--file {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.menu__add-dish--file input {
+    margin-left: 4rem;
+}
+
+.menu__add-dish--money select {
+    padding: .5rem 1rem;
+    color: var(--color-dark);
+    border: none;
+    border-bottom: 1px solid var(--color-secondary);
+    border-left: 1px solid var(--color-secondary);
+    border-bottom-left-radius: 8px;
+}
+
+.menu__add-dish-alergic {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dish-alergic--box {
+    width: 32px;
+    height: 32px;
+}
+
+.dish-alergic--box svg {
+    width: 32px;
+    height: 32px;
+    fill: grey;
+}
+
+.dish-alergic--checkbox {
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~#glutenLabel {
+    background-color: #F47039;
+    border: 2px solid #F47039;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#eggLabel {
+    background-color: #F68D2F;
+    border: 2px solid #F68D2F;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#fishLabel {
+    background-color: #28429D;
+    border: 2px solid #28429D;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#lactoseLabel {
+    background-color: #6D351E;
+    border: 2px solid #6D351E;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#soyLabel {
+    background-color: #02A75B;
+    border: 2px solid #02A75B;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#peelFruitsLabel {
+    background-color: #DA4752;
+    border: 2px solid #DA4752;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#crustaceansLabel {
+    background-color: #1CB6F1;
+    border: 2px solid #1CB6F1;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#mollusksLabel {
+    background-color: #4DC4D5;
+    border: 2px solid #4DC4D5;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#sesameLabel {
+    background-color: #9A8E6C;
+    border: 2px solid #9A8E6C;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#sulphitesLabel {
+    background-color: #82104E;
+    border: 2px solid #82104E;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#mustardLabel {
+    background-color: #C09328;
+    border: 2px solid #C09328;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#peanutsLabel {
+    background-color: #C27344;
+    border: 2px solid #C27344;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#celeryLabel {
+    background-color: #54BF36;
+    border: 2px solid #54BF36;
+    color: var(--color-light);
+}
+
+input[type=checkbox]:checked~#lupinsLabel {
+    background-color: #FADD3D;
+    border: 2px solid #FADD3D;
+    color: var(--color-dark);
+}
+
+.alergic-label {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--color-medium);
+    border: 2px solid var(--color-medium);
+}
+
+.menu__dish-created {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-medium);
+}
+
+.menu__dish-created--icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon--ok {
+    margin-left: 1rem;
+    border: 2px solid rgb(64, 148, 64);
+    border-radius: 100%;
+    padding: .5rem;
+}
+
+.icon--ok svg {
+    width: 1rem;
+    height: 1rem;
+    fill: rgb(64, 148, 64);
+}
+
+.icon--delete svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-medium);
 }

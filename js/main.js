@@ -10,38 +10,38 @@ function openPopUp() {
     console.log('funciona');
 }
 
-window.addEventListener('load', function() {
+// window.addEventListener('load', function() {
 
-    var searching = document.querySelector('#formBuscar');
-    var registerRest = document.querySelector('#formRegister');
+//     var searching = document.querySelector('#formBuscar');
+//     var registerRest = document.querySelector('#formRegister');
 
-    searching.addEventListener('submit', function() {
+//     searching.addEventListener('submit', function() {
 
-        var restaurantName = document.getElementById('filterName').value;
-        var place = document.getElementById('filterPlace').value;
-
-
-        var searchingResult = { 'Nombre del restaurante': restaurantName, 'Lugar': place };
-        console.log(searchingResult);
+//         var restaurantName = document.getElementById('filterName').value;
+//         var place = document.getElementById('filterPlace').value;
 
 
-
-    });
-    registerRest.addEventListener('submit', function() {
-
-        var restaurantUserName = document.getElementById('userName').value;
-        var restaurantOficialName = document.getElementById('resturantName').value;
-        var restaurantAddress = document.getElementById('address').value;
-        var restaurantPostCode = document.getElementById('postCode').value;
-
-        var dataRestaurant = { 'Nombre de usuario': restaurantUserName, 'Nombre del restaurante': restaurantOficialName, 'Dirección del restaurante': restaurantAddress, 'CP del restaurante': restaurantPostCode };
-        console.log(dataRestaurant);
+//         var searchingResult = { 'Nombre del restaurante': restaurantName, 'Lugar': place };
+//         console.log(searchingResult);
 
 
 
-    });
+//     });
+//     registerRest.addEventListener('submit', function() {
 
-});
+//         var restaurantUserName = document.getElementById('userName').value;
+//         var restaurantOficialName = document.getElementById('resturantName').value;
+//         var restaurantAddress = document.getElementById('address').value;
+//         var restaurantPostCode = document.getElementById('postCode').value;
+
+//         var dataRestaurant = { 'Nombre de usuario': restaurantUserName, 'Nombre del restaurante': restaurantOficialName, 'Dirección del restaurante': restaurantAddress, 'CP del restaurante': restaurantPostCode };
+//         console.log(dataRestaurant);
+
+
+
+//     });
+
+// });
 
 
 $(document).ready(function() {
@@ -57,6 +57,11 @@ $(document).ready(function() {
     $('#loginUserBtn').click(function(e) {
         e.preventDefault();
         $('#loginUserBox').toggle();
+    });
+
+    $('#searchGlassBtn').click(function(e) {
+        e.preventDefault();
+        $('#loginSearchBox').toggle();
     });
 
 
@@ -97,6 +102,8 @@ $(document).ready(function() {
             $('.popUp').css('visibility', 'hidden')
         }
     });
+
+
 
 });
 

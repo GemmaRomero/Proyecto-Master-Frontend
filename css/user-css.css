@@ -70,7 +70,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     margin: 4rem 0;
 }
 
@@ -217,4 +217,18 @@
 .favorites--item:hover {
     background-color: var( --color-secondary-light);
     transition: ease-out .3s;
+}
+
+.user--name {
+    font-size: var(--text-m);
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+#loginUserBtn {
+    background-color: var(--color-primary-light);
+}
+
+#loginUserBtn:hover {
+    background-color: var(--color-secondary);
 }

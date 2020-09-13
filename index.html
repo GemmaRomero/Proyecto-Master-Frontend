@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!--intro-->
+    <!--INTRO-->
     <!-- <div class="container-intro">
         <div class="my">
             My
@@ -24,7 +24,8 @@
 
         </div>
     </div> -->
-    <!--header-->
+
+    <!--HEADER-->
     <header class="header" id="logoHeader">
         <div class="header-bg">
             <img src="./css/ui- img/header-bg.svg" alt="" height="130 "></div>
@@ -34,21 +35,21 @@
                 <img src="./css/ui- img/logo-mymenu.svg" alt=" " width="100 ">
             </div>
             <div class="header--icon--group ">
-                <a class="header--icon"><img src="./css/ui- img/searching-magnifying-glass.svg" width="32 " alt=" "></a>
+                <a class="header--icon" id="searchGlassBtn"><img src="./css/ui- img/searching-magnifying-glass.svg" width="32 " alt=" "></a>
                 <a class="header--icon" id="loginUserBtn"><img src="./css/ui- img/user-shape.svg " width="32 " alt=" "></a>
             </div>
 
         </nav>
     </header>
+
     <main>
+
+        <!--SECCION PRINCIPAL -->
         <section class="section--slide">
             <div class="slide__parts slide--img">
-
             </div>
             <form action="" class="slide__parts">
-                <h1 class="title">
-                    Encuentra la carta de tu restaurante favorito
-                </h1>
+                <h1 class="title">Encuentra la carta de tu restaurante favorito</h1>
                 <div class="slide--input" id="formBuscar">
                     <input type="text" name="nombre" id="filterName" placeholder="Nombre del restaurante, tipo de comida... ">
                     <label for="filterName ">¿Sabes como se llama?</label>
@@ -61,100 +62,22 @@
                     <a href="page-user.html"><input class="btn--fill" type="submit" id="bntBuscar" value="Buscar"></a>
                 </div>
             </form>
-
         </section>
 
+        <!--SECCION RESTAURANTES SUGERIDOS / SLIDER -->
         <section class="section__suggestions">
             <div class="suggestions__header">
                 <h3 class="suggestions--title">Restaurantes sugeridos</h3>
                 <div class="buttons-arrows">
                     <button class="icon-arrow" id="btnLeft">
-                        <svg version="1.1 " xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
-                            viewBox="0 0 306 306 " style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                            <g>
-                                <g id="chevron-left ">
-                                    <polygon
-                                        points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153 " />
-                                </g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                        </svg>
-
+                        <svg height="306px" style="enable-background:new 0 0 306 306"version="1.1 "viewBox="0 0 306 306 "width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id="chevron-left "><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153 "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                     </button>
                     <button class="icon-arrow" id="btnRight">
-                        <svg version="1.1 " xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="306px " height="306px "
-                            viewBox="0 0 306 306 " style="enable-background:new 0 0 306 306; " xml:space="preserve ">
-                            <g>
-                                <g id="keyboard-arrow-right ">
-                                    <polygon
-                                        points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306 " />
-                                </g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                        </svg>
+                        <svg height="306px "style="enable-background:new 0 0 306 306"version="1.1 "viewBox="0 0 306 306 "width="306px "x="0px "xml:space="preserve "xmlns=http://www.w3.org/2000/svg xmlns:xlink="http://www.w3.org/1999/xlink "y="0px "><g><g id="keyboard-arrow-right "><polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306 "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                     </button>
                 </div>
             </div>
+
             <div class="suggestions__boxes">
                 <div id="slider" class="suggestions__boxes-slider">
 
@@ -163,850 +86,132 @@
                             <div class="suggestion--item-img">
                                 <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name "> Natural Health</span>
                                 <p class="suggestion--item-description ">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1" id="star1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="suggestion--box">
                         <div class="suggestion--item">
                             <div class="suggestion--item-img">
                                 <img src="https://images.unsplash.com/photo-1581546104493-f7e013a136ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1315&q=80" alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name">Mediterraneo</span>
                                 <p class="suggestion--item-description">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1" id="star1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve">
-                                        <g>
-                                            <g id="star-outline">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="suggestion--box">
                         <div class="suggestion--item ">
                             <div class="suggestion--item-img ">
                                 <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo ">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content ">
                                 <span class="suggestion--item-name "> Natural Health</span>
                                 <p class="suggestion--item-description ">Comida Saludable</p>
-                                <div class="suggestion--item-stars ">
-                                    <svg version="1.1 " id="star1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+
+                                <div class="suggestion--item-stars">
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="suggestion--box">
                         <div class="suggestion--item">
                             <div class="suggestion--item-img">
                                 <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1403&q=80" alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo ">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name"> Natural Health</span>
                                 <p class="suggestion--item-description">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1 " id="star1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="suggestion--box ">
                         <div class="suggestion--item">
@@ -1016,642 +221,99 @@
                             <div class="suggestion--item-logo">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name"> Antepenunltimo</span>
                                 <p class="suggestion--item-description">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1" id="star1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve">
-                                        <g>
-                                            <g id="star-outline">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="suggestion--box">
                         <div class="suggestion--item">
                             <div class="suggestion--item-img">
                                 <img src="https://images.unsplash.com/photo-1550065528-7dd6b266b245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo ">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name"> Penultimo</span>
                                 <p class="suggestion--item-description">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1 " id="star1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="suggestion--box">
                         <div class="suggestion--item">
                             <div class="suggestion--item-img">
                                 <img src="https://images.unsplash.com/photo-1561954468-49af576e1d7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=" ">
                             </div>
+
                             <div class="suggestion--item-logo">
                                 <img src="https://images-platform.99static.com//n3r1oveu6Fm8daKix6HKbuMsRes=/425x0:1642x1217/fit-in/500x500/99designs-contests-attachments/88/88666/attachment_88666662 " alt=" ">
                             </div>
+
                             <div class="suggestion--item-content">
                                 <span class="suggestion--item-name"> Ultimo</span>
                                 <p class="suggestion--item-description">Comida Saludable</p>
+
                                 <div class="suggestion--item-stars">
-                                    <svg version="1.1 " id="star1" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star2 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star3 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star4 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
-                                    <svg version="1.1 " id="star5 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="510px " height="510px " viewBox="0 0 510 510 " style="enable-background:new
-                0 0 510 510; " xml:space="preserve ">
-                                        <g>
-                                            <g id="star-outline ">
-                                                <path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
-                L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z " />
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg>
+                                    <svg height="510px " id=star1 style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star2 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star3 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star4 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <svg height="510px " id="star5 " style="enable-background:new 0 0 510 510" version="1.1 " viewBox="0 0 510 510 " width="510px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="star-outline "><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588
+                                        L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                 </div>
+
                                 <div class="btn--fill" onclick=" ">Ver mas</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
 
+        <!-- SECCIÓN CIUDADES -->
         <section class="section__cities ">
             <div class="suggestions__header ">
                 <h4 class="suggestions--title ">Ciudades para comer</h4>
@@ -1662,7 +324,6 @@
                 </div>
             </div>
             <div class="cities__boxes ">
-
                 <div class="cities__card ">
                     <img src="https://images.unsplash.com/photo-1564565946561-e738711bdbd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80 " height="200 " alt=" ">
                     <span>Madrid</span>
@@ -1690,16 +351,16 @@
             </div>
         </section>
 
-
+        <!-- SECCIÓN REGISTRA TU RESTAURANTE -->
         <section class="section__addRestaurant">
             <div class="filter--dark"></div>
             <div class="restaurant__group">
                 <h2 class="restaurant--title">¿Tienes un restaurante?</h2>
                 <button class="btn--fill" onclick="openPopUp()">Registrálo Aquí</button>
             </div>
-
         </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer--container">
@@ -1707,7 +368,7 @@
                 <p>
                     <a href="#goHeader" id="goHeader"><img src="./css/ui- img/logo-mymenu.svg " width="100 " alt=" "></a>
                 </p>
-                <p> <a href=" ">Sobre nosotros</a> </p>
+                <p><a href=" ">Sobre nosotros</a></p>
             </div>
             <div>
                 <p class="footer--title">Ayuda</p>
@@ -1733,59 +394,16 @@
         </div>
     </footer>
 
-    <!-- Pop UP -->
-
+    <!-- POP UP RESGISTRO RESTAURANTE-->
     <div class="popUp" id="popUp">
-
         <div class="popUp__content">
             <div class="content--info">
-
-
             </div>
-            <form class="signUp--form" id="formRegister">
 
+            <form class="signUp--form" id="formRegister">
                 <span class="title-popUp">Registra tu restaurante</span>
                 <div class="close" onclick="closePopUp()">
-                    <svg version="1.1 " id="close" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="357px " height="357px " viewBox="0 0 357 357 " style="enable-background:new 0 0 357 357;
-                " xml:space="preserve ">
-                        <g>
-                            <g id="close ">
-                                <polygon
-                                    points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5 " />
-                            </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                    </svg>
-
+                    <svg height="357px " id=close style="enable-background:new 0 0 357 357" version="1.1 " viewBox="0 0 357 357 " width="357px " x="0px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " y="0px "><g><g id="close "><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5 "/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                 </div>
                 <div class="popUp__form--input">
                     <input type="text" id="userName" name="usuario">
@@ -1805,9 +423,7 @@
                 </div>
                 <input type="submit" value="Registrar" class="btn--fill">
             </form>
-
         </div>
-
     </div>
 
     <!--LOG IN BOX-->
@@ -1824,25 +440,23 @@
                     <label for="userPassword" id="userPasswordLabel">Contraseña</label>
                 </div>
                 <input type="submit" value="ENTRAR" class="btn--fill" id="btnLoginOk">
-
             </form>
             <span class="user--register-text">Registrarme</span>
         </div>
     </div>
 
-    <!--searching BOX-->
-    <div class="searching__box" id="loginUserBox">
-
+    <!--SEARCHING BOX-->
+    <div class="searching__box" id="loginSearchBox">
         <form action=" " class="searching__box--container">
             <input type="text" class="searching--input">
             <input type="submit" value="BUSCAR" class="btn--search">
         </form>
-
-
     </div>
 
+    <!-- SCRIPT -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

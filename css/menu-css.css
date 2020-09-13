@@ -2,6 +2,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    z-index: -10;
 }
 
 .restaurant__page {
@@ -21,6 +22,62 @@
 
 .page--img img {
     width: 100%;
+}
+
+.icon-heart {
+    position: absolute;
+    background-color: var(--color-light);
+    border: 3px solid var(--color-primary);
+    padding: .8rem;
+    border-radius: 100%;
+    right: 5%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, .3) 3px 3px 5px;
+    z-index: 1;
+}
+
+.icon-heart svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary);
+}
+
+.icon-heart:hover .tooltip {
+    visibility: visible;
+    transition: ease-in-out 1s;
+}
+
+.icon-heart:hover svg {
+    fill: var(--color-medium)
+}
+
+.tooltip {
+    background: var(--color-secondary-light);
+    color: var(--color-dark);
+    padding: 1rem;
+    border-radius: 16px;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    line-height: normal;
+    left: -2rem;
+    top: 5rem;
+    visibility: hidden;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: -3.5rem;
+    right: 5.3rem;
+    transform: translate(100%, 100%);
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-secondary-light) transparent;
 }
 
 .page--name {
@@ -75,6 +132,30 @@
     color: var(--color-medium);
     line-height: 25px;
     margin-bottom: 2rem;
+}
+
+.group-data__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-reservation {
+    margin-top: 2rem;
+}
+
+.bubble-reservation {
+    position: fixed;
+    top: 0rem;
+    left: 2rem;
+    background-color: var(--color-primary);
+    z-index: 10;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: var(--color-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
 }
 
 .data__box {
@@ -157,6 +238,7 @@
     justify-content: space-between;
     margin-bottom: 4rem;
     flex-wrap: wrap;
+    grid-gap: 2rem;
 }
 
 .menu__suggestions--item {
@@ -173,11 +255,26 @@
     height: 150px;
     border-radius: 100%;
     margin-bottom: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-default);
+}
+
+.suggestions--item-img img {
+    width: 100%;
+    min-height: 100%;
 }
 
 .menu--sections-group {
     display: flex;
     flex-direction: column;
+}
+
+.suggestions--item-name {
+    max-width: 150px;
+    text-align: center;
 }
 
 .menu--sections {
@@ -193,13 +290,8 @@
     position: relative;
 }
 
-.menu--sections:first-child {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-}
-
 .menu__container {
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     background-color: rgba(247, 247, 247, 0.986);
     display: none;
     border-bottom: 1px solid rgba(221, 221, 221, 0.986);
@@ -212,16 +304,21 @@
 
 .menu__list--item {
     display: grid;
-    grid-template-columns: .5fr 3fr 1fr 2fr;
+    grid-template-columns: .5fr 3fr 1fr 350px;
     grid-gap: 2rem;
     align-items: center;
     color: var(--color-dark);
+    padding: 1rem 0;
+    border-bottom: 2px solid white;
+}
+
+.menu__list--item:last-child {
+    border-bottom: none;
 }
 
 .menu__item--img {
     width: 5rem;
     height: 5rem;
-    background-color: turquoise;
     border-radius: 100%;
     overflow: hidden;
 }
@@ -250,6 +347,7 @@
 
 .menu__item--alergic {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: .5rem;
 }
@@ -261,13 +359,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .range-stars--text {
     margin-bottom: 2rem;
     color: var(--color-primary-dark);
     font-size: var(--text-l);
+}
+
+.range-stars--text-thanks {
+    margin-top: 2rem;
+    color: var(--color-dark);
+    display: none;
 }
 
 .range-stars__group svg {
@@ -293,7 +397,7 @@
     background-color: var(--color-secondary);
     position: fixed;
     top: 50%;
-    right: -1rem;
+    right: -10rem;
     width: 125px;
     padding: 1rem;
     border-radius: 8px;

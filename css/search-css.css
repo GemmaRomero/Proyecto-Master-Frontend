@@ -1,118 +1,175 @@
 @import 'in-css.css';
 @import 'menu-css.css';
-
-.section__search{
+.section__search {
     width: 100%;
     margin-top: 7rem;
-    
-
 }
-.search--container{
+
+.search--container {
     margin: 0 5rem;
 }
-.section__search--title{
+
+.section__search--title {
     margin-bottom: 2rem;
     color: var(--color-primary-dark);
     font-size: var(--text-l);
 }
-.search__item--box{
+
+.search__item--box {
     background-color: var(--color-medium-light);
     padding: 2rem;
     border-radius: 20px;
     margin-bottom: 2rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
-.search__item--group{
-display: flex;
 
-align-items: center;
-width: 80%;
-
-
+.search__item--group {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin-right: 2rem;
 }
-.search__item--logo{
-    width: 150px;
+
+.search__item--logo {
+    min-width: 150px;
     height: 150px;
     background-color: salmon;
     border-radius: 100%;
     margin-right: 2rem;
 }
-.search__item--content{
-    margin-right: 2rem;
-    width: 70%;
+
+.search__item--content {
     display: flex;
     flex-direction: column;
 }
-.search__item--content button{
+
+.search__item--content button {
     width: fit-content;
 }
-.search__item--content-header{
+
+.search__item--content-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.search__item--name{
+
+.search__item--name {
     margin-bottom: 1rem;
     color: var(--color-primary-dark);
     font-size: var(--text-m);
-    
-    
 }
-.search__item--description{
+
+.search__item--description {
     margin-bottom: 1rem;
     color: var(--color-dark);
-    
 }
-.search__item--stars{
+
+.search__item--stars {
     margin-bottom: 1rem;
 }
-.search__item--stars svg{
+
+.search__item--stars svg {
     width: 24px;
     height: 24px;
     fill: var(--color-secondary);
 }
-.search__item--address{
-   margin-bottom: 1rem;
 
+.search__item--address {
+    margin-bottom: 1rem;
     display: flex;
-   
-}
-.info__box--info-address{
-display: flex;
-align-items: center;
-margin-right: 2rem;
-color: var(--color-dark);
+    flex-wrap: wrap;
 }
 
-.search__item--map{
+.info__box--info-address {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    color: var(--color-dark);
+}
+
+.search__item--map {
     width: 300px;
     background-color: seagreen;
     height: 200px;
 }
-.icon--address{
+
+.icon--address {
     width: 24px;
     height: 24px;
     fill: var(--color-primary);
     margin-right: 1rem;
 }
-.search__item--footer-card{
+
+.search__item--footer-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
-.add--favorites{
+
+.add--favorites {
     text-transform: uppercase;
     font-size: var(--text-s);
     color: var(--color-primary);
 }
-.add--favorites:hover{
+
+.add--favorites:hover {
     color: var(--color-secondary);
     font-weight: bolder;
     transition: ease .3s;
-    
     cursor: pointer;
+}
+
+@media (max-width:1333px) {
+    .search__item--map {
+        width: 100%;
+    }
+    .search__item--footer-card {
+        margin-bottom: 1rem;
+    }
+    .search__item--group {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .info__box--info-address {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:720px) {
+    .search__item--group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .search__item--content-header {
+        flex-direction: column;
+    }
+    .search__item--group {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .search__item--logo {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .search__item--map {
+        width: 100%;
+    }
+    .search__item--address {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__box--info-address {
+        margin-bottom: 1rem;
+    }
+    .search__item--footer-card {
+        flex-direction: column;
+    }
+    .add--favorites {
+        margin: 1rem 0;
+    }
 }
