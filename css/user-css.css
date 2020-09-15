@@ -184,7 +184,7 @@
 .favorites--item-name {
     color: var(--color-primary-dark);
     font-size: var(--text-l);
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .favorites--item-description {

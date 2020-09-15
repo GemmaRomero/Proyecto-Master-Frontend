@@ -130,7 +130,7 @@ function closeAlergics() {
 }
 
 function reservar() {
-    alert('funciona!');
+    alert('llámanos al 912 42 71 81');
 }
 
 $(document).ready(function() {
@@ -202,5 +202,9 @@ $(document).ready(function() {
         $(star4).css('fill', '#ffb300');
         $(star5).css('fill', '#ffb300');
         $(thanks).fadeIn();
+    });
+
+    $('#btnAddFav').click(function(){
+        $('#addFavOk').fadeIn()
     });
 });

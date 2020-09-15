@@ -18,6 +18,8 @@
     height: 300px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, .3) 0px 3px 10px;
+    display: flex;
+    align-items: center;
 }
 
 .page--img img {
@@ -187,6 +189,8 @@
     height: 2rem;
     fill: var(--color-primary-dark);
     margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .icon--data-s {
@@ -263,8 +267,7 @@
 }
 
 .suggestions--item-img img {
-    width: 100%;
-    min-height: 100%;
+   height: 100%;
 }
 
 .menu--sections-group {
@@ -321,6 +324,11 @@
     height: 5rem;
     border-radius: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.menu__item--img img{
+    height: 100%;
 }
 
 .menu__item--name {
@@ -389,7 +397,28 @@
     fill: var(--color-secondary);
     cursor: pointer;
 }
+.add--favorites {
+    text-transform: uppercase;
+    font-size: var(--text-s);
+    color: var(--color-primary);
+}
+.add--favorites:hover {
+    color: var(--color-secondary);
+    font-weight: bolder;
+    transition: ease .3s;
+    cursor: pointer;
+}
+.add--favorites-confirm{
+    margin-top: 1rem;
+    color: var(--color-medium);
+    font-size: var(--text-s);
+    font-style: italic;
+    display: none;
 
+}
+.margin-top{
+margin-top: 2rem;
+}
 
 /* PopUp Alergenos*/
 

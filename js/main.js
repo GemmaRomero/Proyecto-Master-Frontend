@@ -103,6 +103,26 @@ $(document).ready(function() {
         }
     });
 
+    $('#changeSingup').click(function (e) { 
+        e.preventDefault();
+        $('#signUserBox').show();
+        
+    });
+
+    $('#changeLoginp').click(function (e) { 
+        e.preventDefault();
+        $('#signUserBox').hide();
+        $('#loginUserBox').show();
+        
+    });
+
+    $('#cerrarSesion').click(function(e){
+        e.preventDefault();
+        $('#sesionBox').hide();
+        $('#loginUserBox').show();
+
+    });
+
 
 
 });

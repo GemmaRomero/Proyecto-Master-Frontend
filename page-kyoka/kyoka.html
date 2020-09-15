@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Kyoka</title>
+    <link rel="stylesheet" href="/css/menu-css.css">
+
+</head>
+
+<body>
+    <header class="header" id="go-header">
+        <div class="bubble-reservation" id="bubbleReservar" onclick="reservar()">Reservar</div>
+        <div class="header-bg">
+            <img src="/css/ui- img/header-bg.svg" alt="" height="130"></div>
+        <nav class="header__nav">
+
+            <div class="header--logo">
+                <a href="/index.html"><img src="/css/ui- img/logo-mymenu.svg" alt="" width="100"></a>
+            </div>
+            <div class="header--icon--group">
+                <a class="header--icon" id="searchGlassBtn"><img src="/css/ui- img/searching-magnifying-glass.svg" width="32 " alt=" "></a>
+                <a class="header--icon" id="loginUserBtn"><img src="/css/ui- img/user-shape.svg" width="32 " alt=" "></a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <section class="restaurant__page">
+
+            <div class="page--img">
+                <img src="/page-kyoka/img/kyoka-frontpage.jpeg" alt="">
+                
+            </div>
+            <div class="img--box">
+                <img src="/page-kyoka/img/logo-kyoka.png" width="300" height="300" alt="">
+            </div>
+            <div class="page--name">
+                <div class="name--box"> 
+                    <h1 class="title--restaurant">Kyoka II</h1>
+                    <p>Kyoka te ofrece la más exquisita variedad de Japonesa que puedes encontrar en Madrid. Ven a visitarnos o haz tu pedido online. Verás como te sorprenderemos con nuestras especialidades.</p>
+                </div>
+                <div class="group-data__box">
+                    <div class="data__box">
+                        <div class="data__box--info">
+                            <svg class=icon--data height=510px id=Capa_1 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=home><polygon points="204,471.75 204,318.75 306,318.75 306,471.75 433.5,471.75 433.5,267.75 510,267.75 255,38.25 0,267.75 76.5,267.75 76.5,471.75"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span>Glorieta Monte del Gozo, 3, 28050 Madrid</span>
+                        </div>
+                        <div class="data__box--info">
+                            <svg class=icon--data height=459px style="enable-background:new 0 0 459 459" version=1.1 viewBox="0 0 459 459" width=459px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=call><path d="M91.8,198.9c35.7,71.4,96.9,130.05,168.3,168.3L316.2,311.1c7.649-7.649,17.85-10.199,25.5-5.1 c28.05,10.2,58.649,15.3,91.8,15.3c15.3,0,25.5,10.2,25.5,25.5v86.7c0,15.3-10.2,25.5-25.5,25.5C193.8,459,0,265.2,0,25.5 C0,10.2,10.2,0,25.5,0h89.25c15.3,0,25.5,10.2,25.5,25.5c0,30.6,5.1,61.2,15.3,91.8c2.55,7.65,0,17.85-5.1,25.5L91.8,198.9z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            <span>917 50 71 82</span>
+                            <button class="btn--fill btn--call">Llamar</button>
+                        </div>
+                    </div>
+                    <div class="btn-reservation btn--fill" id="btnReservar" onclick="reservar()">Reservar</div>
+
+                </div>
+        </section>
+
+        <section class="section__menu" id="sectionMenu">
+            <div class="section__menu--container">
+                <div class="menu__suggestions">
+                    <h3 class="menu--title">Sugerencias del Chef</h3>
+                    <div class="menu__suggestions--group">
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img">
+                                <img src="/page-kyoka/img/kyoka-01.jpeg" alt="">
+                            </div>
+                            <span class="suggestions--item-name">California Roll</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img">
+                                <img src="/page-kyoka/img/kyoka-02.jpeg" alt="">
+                            </div>
+                            <span class="suggestions--item-name">Nigiri Salmon Flambeado</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img">
+                                <img src="/page-kyoka/img/kyoka-03.jpeg" alt="">
+                            </div>
+                            <span class="suggestions--item-name">Mix Nigiri Maki</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img">
+                                <img src="/page-kyoka/img/lyoka-05.jpeg" alt="">
+                            </div>
+                            <span class="suggestions--item-name">Ramen</span>
+                        </div>
+                        <div class="menu__suggestions--item">
+                            <div class="suggestions--item-img">
+                                <img src="/page-kyoka/img/photo-1579398937948-598009379315.jpeg" alt="">
+                            </div>
+                            <span class="suggestions--item-name">Sashimi bowl</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="menu--title">Nuestra carta</h2>
+                <div class="menu--sections-group">
+
+                    <div class="menu--sections">
+                        <h3>Entrantes</h3>
+                        <svg class=icon--data-s height=306px id=downMenu-1 onclick=seeFirstSectionMenu() style="enable-background:new 0 0 306 306" version=1.1 viewBox="0 0 306 306" width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=keyboard-arrow-down><polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <svg class=icon--data-fix height=357px id=closeMenu-1 onclick=closeFirstSectionMenu() style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+
+                    <div class="menu__container" id="firstSectionGroup">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Huramaki</span>
+                                    <p>Rollito vegetal 4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">3,20 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/02-Egg.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Bolas de pulpo fritas</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">5,
+                                    0 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/02-Egg.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/08-Mollusks.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Wan Tun Frito</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">3,20 €</div>
+                                <div class="menu__item--alergic">
+
+
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/07-Crustaceans.svg" alt="" class="alergic--box">
+
+ 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu--sections">
+                        <h3>Arroz - Pasta</h3>
+                        <svg class=icon--data-s height=306px id=downMenu-2 onclick=seeSecondSectionMenu() style="enable-background:new 0 0 306 306" version=1.1 viewBox="0 0 306 306" width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=keyboard-arrow-down><polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <svg class=icon--data-fix height=357px id=closeMenu-2 onclick=closeSecondSectionMenu() style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+
+                    <div class="menu__container" id="secondSectionGroup">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Yakisoba</span>
+                                    <p></p>
+                                </div>
+                                <div class="menu__item--price">7,00 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Arroz con Anguila</span>
+                                    <p></p>
+                                </div>
+                                <div class="menu__item--price">6,50 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">                                   
+                                    <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Gyoza de Langostino</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">4,80 €</div>
+                                <div class="menu__item--alergic">
+
+                                    <img src="/css/ui- img/icon-alergic/06-PeelFruits.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/07-Crustaceans.svg" alt="" class="alergic--box">
+
+                                    <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+
+                                    
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="menu--sections">
+                        <h3>Tempuras - Nigiri</h3>
+                        <svg class=icon--data-s height=306px id=downMenu-3 onclick=seeThirdSectionMenu() style="enable-background:new 0 0 306 306" version=1.1 viewBox="0 0 306 306" width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=keyboard-arrow-down><polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <svg class=icon--data-fix height=357px id=closeMenu-3 onclick=closeThirdSectionMenu() style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+
+                    <div class="menu__container" id="thirdSectionGroup">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Tempura León, Salmón, Atún y Aguacate</span>
+                                    <p>6 unidades</p>
+                                </div>
+                                <div class="menu__item--price">8,95 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/02-Egg.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Nigiri Atún</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">8 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+
+                                </div>
+                            </li>
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Nigiri Salmón Flambeado</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">8,00 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/02-Egg.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="" class="alergic--box">
+                                    
+
+
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="menu--sections">
+                        <h3>Temaki - Sashimi</h3>
+                        <svg class=icon--data-s height=306px id=downMenu-4 onclick=seeFourthSectionMenu() style="enable-background:new 0 0 306 306" version=1.1 viewBox="0 0 306 306" width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=keyboard-arrow-down><polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <svg class=icon--data-fix height=357px id=closeMenu-4 onclick=closeFourthSectionMenu() style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+
+                    <div class="menu__container" id="fourthSectionGroup">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Temaki Atún Picante</span>
+                                    <p>1 unidad</p>
+                                </div>
+                                <div class="menu__item--price">3,00 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Sashimi de Salmón</span>
+                                    <p>8 unidades</p>
+                                </div>
+                                <div class="menu__item--price">8,80 €</div>
+                                <div class="menu__item--alergic">
+
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Sashimi de Atún</span>
+                                    <p>8 unidades</p>
+                                </div>
+                                <div class="menu__item--price">9,80 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="" class="alergic--box">
+
+                                </div>
+                            
+
+                        </ul>
+                    </div>
+
+                    <div class="menu--sections">
+                        <h3>Postres</h3>
+                        <svg class=icon--data-s height=306px id=downMenu-5 onclick=seeFifthSectionMenu() style="enable-background:new 0 0 306 306" version=1.1 viewBox="0 0 306 306" width=306px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=keyboard-arrow-down><polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <svg class=icon--data-fix height=357px id=closeMenu-5 onclick=closeFifthSectionMenu() style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+                            y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+
+                    <div class="menu__container" id="fifthSectionGroup">
+                        <ul class="menu__container--list">
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Trufas Japonesas</span>
+                                    <p>4 unidades</p>
+                                </div>
+                                <div class="menu__item--price">4,25 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+
+                                </div>
+                            </li>
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Mochi</span>
+                                    <p>Coco, té o fresa</p>
+                                </div>
+                                <div class="menu__item--price">2,50 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+
+
+                                </div>
+                            </li>
+
+                            <li class="menu__list--item">
+                                <div class="menu__item--img">
+                                    <img src="">
+                                </div>
+                                <div class="menu__item--name">
+                                    <span>Brownie</span>
+                                    <p>Nueces y coco</p>
+                                </div>
+                                <div class="menu__item--price">5,25 €</div>
+                                <div class="menu__item--alergic">
+                                    <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="" class="alergic--box">
+                                    <img src="/css/ui- img/icon-alergic/06-PeelFruits.svg" alt="" class="alergic--box">
+
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PUNTUA LA CARTA -->
+        <section class="section__range-stars">
+            <span class="range-stars--text">¿Quieres puntuar nuestra carta?</span>
+            <div class="range-stars__group">
+                <svg height=510px id=star1 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=star-outline><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588 L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <svg height=510px id=star2 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=star-outline><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588 L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <svg height=510px id=star3 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=star-outline><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588 L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <svg height=510px id=star4 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=star-outline><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588 L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <svg height=510px id=star5 style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=star-outline><path d="M510,197.472l-183.37-15.734L255,12.75l-71.629,168.988L0,197.472l139.103,120.539L97.41,497.25L255,402.186 l157.59,95.064l-41.692-179.239L510,197.472z M255,354.348l-95.957,57.886l25.398-109.166l-84.736-73.389l111.69-9.588 L255,117.172l43.605,102.918l111.689,9.588l-84.711,73.389l25.398,109.166L255,354.348z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </div>
+            <span class="range-stars--text-thanks" id='thanksStars'>Gracias por tu respuesta</span>
+            <span class="add--favorites margin-top" id="btnAddFav">añadir a favoritos</span>
+            <span class="add--favorites-confirm" id="addFavOk">Hemos añadido Kyoka II a tus favoritos</span>
+        </section>
+
+        <!-- SECTION MAP -->
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97083.05261737097!2d-3.7415785832274993!3d40.50080172837828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422ba13776ebb7%3A0xd6abac85341955fe!2sKyoka%20Las%20Tablas!5e0!3m2!1sen!2ses!4v1600070129954!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer--container">
+            <div>
+                <p>
+                    <a href="/index.html"><img src="/css/ui- img/logo-mymenu.svg" width="100" alt=""></a>
+                </p>
+                <p> <a href="">Sobre nosotros</a> </p>
+            </div>
+            <div>
+                <p class="footer--title">Ayuda</p>
+                <p><a href="">Preguntas <br> Frecuentes</a></p>
+                <p><a href="">Contacto</a></p>
+            </div>
+            <div>
+                <p class="footer--title">Términos Legales</p>
+                <p><a href="">Términos <br> y Condiciones</a></p>
+                <p><a href="">Política de Privacidad</a></p>
+                <p><a href="">Política de Cookies</a></p>
+            </div>
+            <div>
+                <p class="footer--title">Síguenos</p>
+                <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="https://twitter.com" target="_blank"> Twitter</a></p>
+                <p><a href="https://www.instagram.com/" target="_blank"> Instagram</a></p>
+            </div>
+            <div class="download-app">
+                <a href="https://play.google.com/" target="_blank"><img src="./css/ui- img/google-play.svg" alt=""></a>
+                <a href="https://www.apple.com/" target="_blank"><img src="./css/ui- img/apple-store.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Pop Up Info alérgenos -->
+    <div class="alergic-info" id="btnAlergic" onclick="openAlergics()">
+        Consultar información alérgenos
+    </div>
+    <div class="popUp--alergic" id="popUpAlergic">
+        <div class="close--alergic" onclick="closeAlergics()">
+            <svg height=357px style="enable-background:new 0 0 357 357" version=1.1 viewBox="0 0 357 357" width=357px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><g><g id=close><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/01-Gluten.svg" alt="">
+            <span>Gluten</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/02-Egg.svg" alt="">
+            <span>Huevos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/03-Fish.svg" alt="">
+            <span>Pescado</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/04-DairyProducts.svg" alt="">
+            <span>Lacteos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/05-Soy.svg" alt="">
+            <span>Soja</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/06-PeelFruits.svg" alt="">
+            <span>Frutos con cáscara</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/07-Crustaceans.svg" alt="">
+            <span>Crustáceos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/08-Mollusks.svg" alt="">
+            <span>Moluscos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/09-SesameGrains.svg" alt="">
+            <span>Sésamo</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/10-Sulphites.svg" alt="">
+            <span>Sulfitos</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/11-Mustard.svg" alt="">
+            <span>Mostaza</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/12-Peanuts.svg" alt="">
+            <span>Cacahuetes</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/13-Celery.svg" alt="">
+            <span>Apio</span>
+        </div>
+        <div class="popUp--alergic--item">
+            <img src="/css/ui- img/icon-alergic/14-Lupins.svg" alt="">
+            <span>Altramuces</span>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--LOG IN BOX-->
+    <div class="login__box" id="loginUserBox">
+        <div class="login__box--container">
+            <span class="login--text">Iniciar sesión</span>
+            <form action=" " id="formLogin">
+                <div class="login--user">
+                    <input type="text" id="userEmail" placeholder="ejemplo@email.com" class="user--input">
+                    <label for="userEmail" id="userEmailLabel">Usuario</label>
+                </div>
+                <div class="login--user">
+                    <input type="password" id="userPassword" class="user--input">
+                    <label for="userPassword" id="userPasswordLabel">Contraseña</label>
+                </div>
+                <!-- <input type="submit" value="ENTRAR" class="btn--fill" id="btnLoginOk"> -->
+                <a href="/page-user.html" class="btn--fill">entrar</a>
+            </form>
+            <span class="user--register-text">Registrarme</span>
+        </div>
+    </div>
+<!--SIGN UP BOX-->
+<div class="signup__box" id="signUserBox">
+    <div class="signup__box--container">
+        <span class="login--text">Regístrate</span>
+        <form action=" " id="formLogin">
+            <div class="login--user">
+                <input type="text" id="userName" class="user--input">
+                <label for="userName" id="userEmailLabel">Nombre Usuario</label>
+            </div>
+            <div class="login--user">
+                <input type="email" id="userEmail" placeholder="ejemplo@email.com" class="user--input">
+                <label for="userEmail" id="userEmailLabel">Correo Electrónico</label>
+            </div>
+            <div class="login--user">
+                <input type="password" id="userPassword" class="user--input">
+                <label for="userPassword" id="userPasswordLabel">Contraseña</label>
+            </div>
+            <!-- <input type="submit" value="registrar" class="btn--fill" id="btnLoginOk"> -->
+            <a href="/page-user.html" class="btn--fill">Registrar</a>
+        </form>
+        <span class="user--register-text" id="changeLoginp">Iniciar Sesión</span>
+    </div>
+</div>
+    <!--SEARCHING BOX-->
+    <div class="searching__box" id="loginSearchBox">
+        <form action=" " class="searching__box--container">
+            <input type="text" class="searching--input">
+            <!-- <input type="search" value="BUSCAR" class="btn--search"> -->
+            <a href="/page-search.html" class="btn--search">BUSCAR</a>
+        </form>
+    </div>
+    <!--SCRIPT-->
+    <script src="/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+    <script src="/js/page-menu.js" type="text/javascript"></script>
+</body>
+
+</html>

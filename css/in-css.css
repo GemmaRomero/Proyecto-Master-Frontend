@@ -132,6 +132,7 @@ body {
     text-align: center;
     line-height: normal;
     font-size: var(--text-default);
+    text-decoration: none;
 }
 
 .buttons-arrows {
@@ -254,7 +255,7 @@ body {
 .suggestion--item-name {
     color: var(--color-primary-dark);
     font-size: var(--text-l);
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .suggestion--item-description {
@@ -651,7 +652,8 @@ body {
 
 /* LOG IN BOX */
 
-.login__box {
+.login__box, 
+.signup__box{
     position: absolute;
     top: 5rem;
     right: 2rem;
@@ -661,9 +663,11 @@ body {
     border-radius: 20px;
     box-shadow: var(--box-shadow-default);
     display: none;
+    
 }
 
-.login__box::after {
+.login__box::after,
+.signup__box::after {
     content: "";
     position: absolute;
     top: -3.7rem;
@@ -675,7 +679,8 @@ body {
     margin-left: -15px;
 }
 
-.login__box--container {
+.login__box--container,
+.signup__box--container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -683,7 +688,8 @@ body {
     margin: 2rem;
 }
 
-.login__box--container form {
+.login__box--container form,
+.signup__box--container form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -696,7 +702,7 @@ body {
     text-align: center;
 }
 
-.login--user {
+.login--user{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -711,7 +717,7 @@ body {
     padding: .5rem 1rem;
 }
 
-.login--user label {
+.login--user label{
     color: var(--color-dark);
 }
 
@@ -778,6 +784,7 @@ body {
     background-color: var(--color-primary);
     color: var(--color-light);
     padding: .3rem 1rem;
+    text-decoration: none;
 }
 
 .btn--search:hover {

@@ -19,8 +19,10 @@
                 <a href="./index.html"><img src="./css/ui- img/logo-mymenu.svg" alt="" width="100"></a>
             </div>
             <div class="header--icon--group">
-                <a class="header--icon" id="searchGlassBtn"><img src="./css/ui- img/searching-magnifying-glass.svg" width="32 " alt=" "></a>
-                <a class="header--icon" id="loginUserBtn"><img src="./css/ui- img/user-shape.svg " width="32 " alt=" "></a>
+                <a class="header--icon" id="searchGlassBtn"><img src="./css/ui- img/searching-magnifying-glass.svg"
+                        width="32 " alt=" "></a>
+                <a class="header--icon" id="loginUserBtn"><img src="./css/ui- img/user-shape.svg " width="32 "
+                        alt=" "></a>
             </div>
 
         </nav>
@@ -43,7 +45,9 @@
                             </div>
                             <div class="data__text--description ">
                                 <label for="textDescription" class="label">Añade una descripción</label>
-                                <textarea name="description" id="textDescription" cols="30" rows="10" placeholder="Máximo 1500 caracteres" autocapitalize="sentence" maxlength="1500" required></textarea>
+                                <textarea name="description" id="textDescription" cols="30" rows="10"
+                                    placeholder="Máximo 1500 caracteres" autocapitalize="sentence" maxlength="1500"
+                                    required></textarea>
                             </div>
                         </div>
                         <div class="data__file-group">
@@ -95,7 +99,9 @@
                     <div class="restaurant__suggestions-group">
                         <span class="restaurant__suggestions--title">Añade las sugerencias del chef</span>
                         <div class="restaurant__suggestions--add" id="btnAddSuggestion">
-                            <svg height=510px style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
+                            <svg height=510px style="enable-background:new 0 0 510 510" version=1.1
+                                viewBox="0 0 510 510" width=510px x=0px xml:space=preserve
+                                xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
                                 <g>
                                     <g id=circles-add>
                                         <path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,459
@@ -142,7 +148,9 @@
                     <div class="restaurant__menu-group">
                         <span class="restaurant__menu--title">Añade los platos a la carta</span>
                         <div class="restaurant__menu--add-section" id="btnNewMenuSection">
-                            <svg height=510px style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
+                            <svg height=510px style="enable-background:new 0 0 510 510" version=1.1
+                                viewBox="0 0 510 510" width=510px x=0px xml:space=preserve
+                                xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
                                 <g>
                                     <g id=circles-add>
                                         <path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,459
@@ -174,16 +182,18 @@
                                 <label for="sectionMenuName" class="label">Nombre de la sección</label>
                                 <input type="text" id="sectionMenuName" placeholder="Entrantes, Carnes, Pescado...">
                             </div>
-                            <div class="btn--fill">confirmar sección</div>
+                            <div class="btn--fill" id="btnConfirmSection" onclick="addSection()">confirmar sección</div>
                         </div>
 
                         <div class="menu-section">
-                            <div class="menu-section--item">
-                                <div class="menu-section--item-name">
+                            <div class="menu-section--item" id="sectionItem">
+                                <div class="menu-section--item-name" id="sectionName">
                                     Entrantes
                                 </div>
                                 <div class="menu-section--item-add" id="btnNewDish">
-                                    <svg height=510px style="enable-background:new 0 0 510 510" version=1.1 viewBox="0 0 510 510" width=510px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
+                                    <svg height=510px style="enable-background:new 0 0 510 510" version=1.1
+                                        viewBox="0 0 510 510" width=510px x=0px xml:space=preserve
+                                        xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
                                         <g>
                                             <g id=circles-add>
                                                 <path
@@ -210,112 +220,124 @@
                                     </svg>
                                 </div>
                             </div>
-
-                            <div class="menu__add-dish" id="newDish">
-                                <div class="menu__add-dish-group">
-                                    <div class="menu__add-dish--name">
-                                        <label for="dishMenuName" class="label">Nombre del plato</label>
-                                        <input type="text" id="dishMenuName" required>
+                            <div id="newDish">
+                                <div class="menu__add-dish">
+                                    <div class="menu__add-dish-group">
+                                        <div class="menu__add-dish--name">
+                                            <label for="dishMenuName" class="label">Nombre del plato</label>
+                                            <input type="text" id="dishMenuName" required>
+                                        </div>
+                                        <div class="menu__add-dish--description">
+                                            <label for="dishMenuDescription" class="label">Añade una descripción del
+                                                plato</label>
+                                            <textarea name="description" id="dishMennuDescription" cols="30" rows="10"
+                                                placeholder="Máximo 160 caracteres" autocapitalize="sentence"
+                                                maxlength="160"></textarea>
+                                        </div>
                                     </div>
-                                    <div class="menu__add-dish--description">
-                                        <label for="dishMenuDescription" class="label">Añade una descripción del
-                                            plato</label>
-                                        <textarea name="description" id="dishMennuDescription" cols="30" rows="10" placeholder="Máximo 160 caracteres" autocapitalize="sentence" maxlength="160"></textarea>
+                                    <div class="menu__add-dish-group">
+                                        <div class="menu__add-dish--file-group">
+                                            <span class="label">Elegir imagen del plato</span>
+                                            <div class="menu__add-dish--file">
+                                                <label for="dishMenuFile" class="btn-upload">Seleccionar archivo</label>
+                                                <input type="file" id="dishMenuFile">
+                                            </div>
+                                        </div>
+                                        <div class="menu__add-dish--money">
+                                            <label for="menuDishMoney" class="label">Elige moneda</label>
+                                            <select name="moneda" id="menuDishMoney">
+                                                <option value="Euro">Euro</option>
+                                            </select>
+                                        </div>
+                                        <div class="menu__add-dish--price">
+                                            <label for="menuDishPrice" class="label">Introduce el precio</label>
+                                            <input type="number" required id="menuDishPrice">
+                                        </div>
                                     </div>
+                                    <div class="menu__add-dish-alergic-group">
+                                        <label for="menuDishAlergic" class="label">Selecciona los alérgenos que
+                                            contiene</label>
+                                        <div class="menu__add-dish-alergic" id="menuDishAlergic">
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="gluten">
+                                                <label for="gluten" class="alergic-label"
+                                                    id="glutenLabel">Gluten</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="egg">
+                                                <label for="egg" class="alergic-label" id="eggLabel">Huevos</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="fish">
+                                                <label for="fish" class="alergic-label" id="fishLabel">Pescado</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="lactose">
+                                                <label for="lactose" class="alergic-label"
+                                                    id="lactoseLabel">Lácteos</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="soy">
+                                                <label for="soy" class="alergic-label" id="soyLabel">Soja</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="peelFruits">
+                                                <label for="peelFruits" class="alergic-label"
+                                                    id="peelFruitsLabel">Frutos con cáscara</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="crustaceans">
+                                                <label for="crustaceans" class="alergic-label"
+                                                    id="crustaceansLabel">Crustáceos</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="mollusks">
+                                                <label for="mollusks" class="alergic-label"
+                                                    id="mollusksLabel">Moluscos</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="sesame">
+                                                <label for="sesame" class="alergic-label"
+                                                    id="sesameLabel">Sésamo</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="sulphites">
+                                                <label for="sulphites" class="alergic-label"
+                                                    id="sulphitesLabel">Sulfitos</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="mustard">
+                                                <label for="mustard" class="alergic-label"
+                                                    id="mustardLabel">Mostaza</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="peanuts">
+                                                <label for="peanuts" class="alergic-label"
+                                                    id="peanutsLabel">Cacahuetes</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="celery">
+                                                <label for="celery" class="alergic-label" id="celeryLabel">Apio</label>
+                                            </div>
+                                            <div class="dish-alergic--checkbox">
+                                                <input type="checkbox" id="lupins">
+                                                <label for="lupins" class="alergic-label"
+                                                    id="lupinsLabel">Altramuces</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn--fill" id="confirmDish" onclick="dishOk()">confirmar plato</div>
                                 </div>
-                                <div class="menu__add-dish-group">
-                                    <div class="menu__add-dish--file-group">
-                                        <span class="label">Elegir imagen del plato</span>
-                                        <div class="menu__add-dish--file">
-                                            <label for="dishMenuFile" class="btn-upload">Seleccionar archivo</label>
-                                            <input type="file" id="dishMenuFile">
-                                        </div>
-                                    </div>
-                                    <div class="menu__add-dish--money">
-                                        <label for="menuDishMoney" class="label">Elige moneda</label>
-                                        <select name="moneda" id="menuDishMoney">
-                                            <option value="Euro">Euro</option>
-                                        </select>
-                                    </div>
-                                    <div class="menu__add-dish--price">
-                                        <label for="menuDishPrice" class="label">Introduce el precio</label>
-                                        <input type="number" required id="menuDishPrice">
-                                    </div>
-                                </div>
-                                <div class="menu__add-dish-alergic-group">
-                                    <label for="menuDishAlergic" class="label">Selecciona los alérgenos que
-                                        contiene</label>
-                                    <div class="menu__add-dish-alergic" id="menuDishAlergic">
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="gluten">
-                                            <label for="gluten" class="alergic-label" id="glutenLabel">Gluten</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="egg">
-                                            <label for="egg" class="alergic-label" id="eggLabel">Huevos</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="fish">
-                                            <label for="fish" class="alergic-label" id="fishLabel">Pescado</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="lactose">
-                                            <label for="lactose" class="alergic-label" id="lactoseLabel">Lácteos</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="soy">
-                                            <label for="soy" class="alergic-label" id="soyLabel">Soja</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="peelFruits">
-                                            <label for="peelFruits" class="alergic-label" id="peelFruitsLabel">Frutos con cáscara</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="crustaceans">
-                                            <label for="crustaceans" class="alergic-label" id="crustaceansLabel">Crustáceos</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="mollusks">
-                                            <label for="mollusks" class="alergic-label" id="mollusksLabel">Moluscos</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="sesame">
-                                            <label for="sesame" class="alergic-label" id="sesameLabel">Sésamo</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="sulphites">
-                                            <label for="sulphites" class="alergic-label" id="sulphitesLabel">Sulfitos</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="mustard">
-                                            <label for="mustard" class="alergic-label" id="mustardLabel">Mostaza</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="peanuts">
-                                            <label for="peanuts" class="alergic-label" id="peanutsLabel">Cacahuetes</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="celery">
-                                            <label for="celery" class="alergic-label" id="celeryLabel">Apio</label>
-                                        </div>
-                                        <div class="dish-alergic--checkbox">
-                                            <input type="checkbox" id="lupins">
-                                            <label for="lupins" class="alergic-label" id="lupinsLabel">Altramuces</label>
-                                        </div>
-
-
-
-
-                                    </div>
-                                </div>
-                                <div class="btn--fill">confirmar plato</div>
                             </div>
-                            <div class="menu__dish-created">
+                            <div class="menu__dish-created" id="dishCreated">
 
                                 <div class="menu__dish-created--icons">
-                                    <span id="dishCreatedName">Croquetas</span>
+                                    <span id="dishCreatedName" id="dishCreatedName">Croquetas</span>
                                     <div class="icon--ok">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="448.8px" height="448.8px" viewBox="0 0 448.8 448.8" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="448.8px"
+                                            height="448.8px" viewBox="0 0 448.8 448.8"
+                                            style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve">
                                             <g>
                                                 <g id="done">
                                                     <polygon
@@ -358,7 +380,10 @@
 
                                 </div>
                                 <div class="icon--delete">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="357px"
+                                        height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;"
+                                        xml:space="preserve">
                                         <g>
                                             <g id="close">
                                                 <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
@@ -438,8 +463,10 @@
                 <p><a href="https://www.instagram.com/ " target="_blank "> Instagram</a></p>
             </div>
             <div class="download-app ">
-                <a href="https://play.google.com/ " target="_blank "><img src="./css/ui- img/google-play.svg " alt=" "></a>
-                <a href="https://www.apple.com/ " target="_blank "><img src="./css/ui- img/apple-store.svg " alt=" "></a>
+                <a href="https://play.google.com/ " target="_blank "><img src="./css/ui- img/google-play.svg "
+                        alt=" "></a>
+                <a href="https://www.apple.com/ " target="_blank "><img src="./css/ui- img/apple-store.svg "
+                        alt=" "></a>
             </div>
         </div>
     </footer>
